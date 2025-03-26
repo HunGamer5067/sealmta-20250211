@@ -1,0 +1,19 @@
+<meta>
+    <info author="joaopsantos16" type="misc" version="1.0" />
+    <min_mta_version server="1.6.0-9.22470" />
+    
+    <script src="client.luac" type="client" cache="false" />
+    
+    <file src="sounds/engines/*.wav" />
+    
+    <file src="sounds/enginestart.wav" />
+    <file src="sounds/enginecooling.wav" />
+    <file src="sounds/moto_enginestart.wav" />
+    <file src="sounds/moto_engineshutdown.wav" />
+    <file src="sounds/engineshutdown.wav" />
+    <file src="sounds/doorlock.wav" />
+    <file src="sounds/lightswitch.wav" />
+    
+    
+    <download_priority_group>-127</download_priority_group>
+</meta>

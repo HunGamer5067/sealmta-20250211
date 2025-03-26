@@ -1,0 +1,27 @@
+<meta>
+    <oop>true</oop>
+    <script src="Kliens.luac" type="client" cache="false" />
+    
+    <file src="models/small.dff" />
+    <file src="models/small.txd" />
+    <file src="models/small.col" />
+    
+    <file src="models/big.dff" />
+    <file src="models/big.txd" />
+    <file src="models/big.col" />
+    
+    <file src="models/med.dff" />
+    <file src="models/med.txd" />
+    <file src="models/med.col" />
+    
+    <file src="models/letter.dff" />
+    <file src="models/letter.txd" />
+    
+    <file src="models/elfmodel.dff" />
+    
+    
+    
+    
+    <download_priority_group>-60</download_priority_group>
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728"></min_mta_version>
+</meta>

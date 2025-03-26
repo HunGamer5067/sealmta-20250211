@@ -1,0 +1,9 @@
+<meta>
+	<info author="Skann" description="LS East Beach Skate Park" version="1.0" type="script" />
+	<script src="client.lua" type="client" />
+	<file src="lae2_roadscoast01.col" type="client" />
+	<file src="lae2_roadscoast01.txd" type="client" />
+	<file src="lae2_roadscoast01.dff" type="client" />
+	<map src="LSEBSP.map" type="client" />
+
+</meta>

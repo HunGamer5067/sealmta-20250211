@@ -1,0 +1,8 @@
+<meta>
+    <script src="functionsC.luac" type="client" cache="false" />
+    
+    <file src="vehs/*.dff" />
+    <file src="vehs/*.txd" />
+    
+    <download_priority_group>-87</download_priority_group>
+</meta>

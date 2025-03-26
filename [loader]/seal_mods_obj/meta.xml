@@ -1,0 +1,9 @@
+<meta>
+    <script src="functionsC.luac" type="client" cache="false" />
+    
+    <file src="objs/*.dff" />
+    <file src="objs/*.txd" />
+    <file src="objs/*.col" />
+    
+    <download_priority_group>-85</download_priority_group>
+</meta>

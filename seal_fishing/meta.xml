@@ -1,0 +1,71 @@
+<meta>
+    <script src="sourceG.lua" type="shared" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    <script src="sourceC.lua" type="client" cache="false" />
+    
+    <file src="files/7seg.dds" />
+    <file src="files/bedobas.ifp" />
+    <file src="files/common.wav" />
+    <file src="files/creak.mp3" />
+    <file src="files/epic.wav" />
+    <file src="files/event.dds" />
+    <file src="files/fishin.wav" />
+    <file src="files/fishingstand.ifp" />
+    <file src="files/fishout.wav" />
+    <file src="files/fishweight.wav" />
+    <file src="files/float.dds" />
+    <file src="files/gear.mp3" />
+    <file src="files/glow1.dds" />
+    <file src="files/glow2.dds" />
+    <file src="files/gotfish.mp3" />
+    <file src="files/gotfish1.dds" />
+    <file src="files/gotfish2.dds" />
+    <file src="files/gotfishdrum.mp3" />
+    <file src="files/halpoz.ifp" />
+    <file src="files/kihuzas.ifp" />
+    <file src="files/legendary.wav" />
+    <file src="files/orso0.dds" />
+    <file src="files/orso1.dds" />
+    <file src="files/orso2.dds" />
+    <file src="files/orso3.dds" />
+    <file src="files/orso4.dds" />
+    <file src="files/orsol.dds" />
+    <file src="files/rare.wav" />
+    <file src="files/reel.mp3" />
+    <file src="files/screen.dds" />
+    <file src="files/snap.mp3" />
+    <file src="files/spindle.mp3" />
+    <file src="files/splash.mp3" />
+    <file src="files/tengrad.dds" />
+    <file src="files/tournament.dds" />
+    <file src="files/waterline.dds" />
+    <file src="files/waterout.mp3" />
+    <file src="files/win.dds" />
+    <file src="files/woosh.mp3" />
+    <file src="files/floats/1.dds" />
+    <file src="files/floats/2.dds" />
+    <file src="files/floats/3.dds" />
+    <file src="files/lines/1.dds" />
+    <file src="files/lines/2.dds" />
+    <file src="files/lines/3.dds" />
+    <file src="files/lines/4.dds" />
+    <file src="files/lines/5.dds" />
+    <file src="files/lines/6.dds" />
+    <file src="files/lines/7.dds" />
+    <file src="files/rods/1.dds" />
+    <file src="files/rods/2.dds" />
+    <file src="files/rods/3.dds" />
+    <file src="files/rods/4.dds" />
+    
+    <export function="canUseAnimPanel" type="client" />
+    <export function="getFishingLineColor" type="client" />
+    <export function="isFloatSkinValid" type="client" />
+    <export function="calculateFishLength" type="client" />
+    <export function="getPlayerFishingDatas" type="server" />
+    <export function="getPlayerFishingData" type="server" />
+    <export function="isPlayerStandingInDropOffCol" type="server" />
+    <export function="removePlayerBait" type="server" />
+    
+    <min_mta_version client="1.6.0" server="1.6.0" />
+    <download_priority_group>-157</download_priority_group>
+</meta>

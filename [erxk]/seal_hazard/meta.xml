@@ -1,0 +1,9 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/icon.png" />
+    
+    <export type="server" function="createCustomObject" />
+    <download_priority_group>-64</download_priority_group>
+</meta>

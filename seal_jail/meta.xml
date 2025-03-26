@@ -1,0 +1,12 @@
+<meta>
+    <script type="server" src="sourceS.lua" />
+    <script type="client" src="sourceC.lua" cache="false" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    
+    <file src="files/adminjail.txd" />
+    <file src="files/adminjail.dff" />
+    <file src="files/adminjail.col" />
+    <file src="files/Roboto.ttf" />
+    <download_priority_group>-71</download_priority_group>
+</meta>

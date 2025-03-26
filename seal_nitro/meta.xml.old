@@ -1,0 +1,10 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/backfire_nitro.dds" />
+    <file src="files/ins.wav" />
+    <file src="files/nitro.fx" />
+    <file src="files/outs.wav" />
+    <download_priority_group>-93</download_priority_group>
+</meta>

@@ -1,0 +1,17 @@
+<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (lastripx1_LAS) (1)" radius="26.629284" interior="-1" model="5017" lodModel="4969" posX="1932.4297" posY="-2123.4062" posZ="15.94531" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (BillBd2) (1)" radius="16.84787" interior="-1" model="1267" lodModel="1261" posX="1935.1797" posY="-2140.1094" posZ="19.1875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lamppost3) (1)" radius="6.6149273" interior="-1" model="1226" lodModel="0" posX="1944.8047" posY="-2136.2578" posZ="15.85156" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (Gen_doorEXT11) (1)" radius="3.4591658" interior="-1" model="1532" lodModel="0" posX="1939.6016" posY="-2116.7578" posZ="12.67969" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lamppost3) (2)" radius="6.6149273" interior="-1" model="1226" lodModel="0" posX="1944.8047" posY="-2110.2969" posZ="15.85156" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lamppost3) (3)" radius="6.6149273" interior="-1" model="1226" lodModel="0" posX="1945.0547" posY="-2162.4531" posZ="16.35156" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_2) (1)" radius="4.9508986" interior="-1" model="1412" lodModel="0" posX="1921.0156" posY="-2153.3516" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_3) (1)" radius="4.9762206" interior="-1" model="1413" lodModel="0" posX="1921.0156" posY="-2148.0703" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_2) (2)" radius="4.9508986" interior="-1" model="1412" lodModel="0" posX="1921.0156" posY="-2142.7891" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_3) (2)" radius="4.9762206" interior="-1" model="1413" lodModel="0" posX="1921.0156" posY="-2137.5078" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (CJ_Dump2_LOW) (1)" radius="3.1421356" interior="-1" model="1372" lodModel="0" posX="1920.0547" posY="-2122.4141" posZ="12.6875" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_2) (3)" radius="4.9508986" interior="-1" model="1412" lodModel="0" posX="1921.0156" posY="-2126.5312" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_2) (4)" radius="4.9508986" interior="-1" model="1412" lodModel="0" posX="1921.0156" posY="-2115.9766" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_3) (3)" radius="4.9762206" interior="-1" model="1413" lodModel="0" posX="1921.0156" posY="-2110.6953" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (DYN_MESH_3) (4)" radius="4.9762206" interior="-1" model="1413" lodModel="0" posX="1921.0156" posY="-2121.25" posZ="13.72656" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+</map>

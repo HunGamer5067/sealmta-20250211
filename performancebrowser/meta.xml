@@ -1,0 +1,20 @@
+<meta>
+    <include resource="ajax" />
+    <info author="" type="script" name="Performance stats" showInResourceBrowser="true" version="0.0.4" />
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728"></min_mta_version>
+    <script src="performancebrowser.luac" type="server" />
+    <script src="viewer.luac" type="server" />
+    <script src="viewerManager.luac" type="server" />
+    <script src="target.luac" type="server" />
+    <script src="targetManager.luac" type="server" />
+    <script src="performancebrowser_client.luac" type="client" />
+    
+    <html src="pad.gif" raw="true" />
+    <html src="loading.gif" raw="true" />
+    <html src="main.htm" default="true" />
+    <html src="main.css" raw="true" />
+    <html src="main.js" raw="true" />
+    
+    <export function="setQuery" http="true" />
+    <download_priority_group>-12</download_priority_group>
+</meta>

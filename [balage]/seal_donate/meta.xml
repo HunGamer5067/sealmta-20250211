@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceS.lua" type="server" />
+    
+    <export function="gotDonationFromPlayer" type="server" http="true" />
+    <download_priority_group>-48</download_priority_group>
+</meta>

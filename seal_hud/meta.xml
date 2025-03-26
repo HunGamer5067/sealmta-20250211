@@ -1,0 +1,304 @@
+<meta>
+    <include resource="custom_coronas" />
+    <min_mta_version server="1.5.8-9.20901" client="1.5.8-9.20901" />
+    
+    <download_priority_group>-146</download_priority_group>
+    
+    
+    <file src="minimap/newblips/fuel.png" />
+    <file src="minimap/newblips/autumn.png" />
+    <file src="minimap/newblips/lifeguard.png" />
+    <file src="minimap/newblips/pizza.png" />
+    <file src="minimap/newblips/trailerrent.png" />
+    <file src="minimap/newblips/butcher.png" />
+    <file src="minimap/newblips/mgnagyker.png" />
+    <file src="minimap/newblips/taxiblip.png" />
+    <file src="minimap/newblips/festekblip.png" />
+    <file src="minimap/newblips/bbipar.png" />
+    <file src="minimap/newblips/charger.png" />
+    <file src="minimap/newblips/piac.png" />
+    
+    <file src="minimap/jobblips/247.png" />
+    <file src="minimap/jobblips/abc.png" />
+    <file src="minimap/jobblips/bb.png" />
+    <file src="minimap/jobblips/burger.png" />
+    <file src="minimap/jobblips/carshop.png" />
+    <file src="minimap/jobblips/cluckin.png" />
+    <file src="minimap/jobblips/donut.png" />
+    <file src="minimap/jobblips/electro.png" />
+    <file src="minimap/jobblips/fcbbq.png" />
+    <file src="minimap/jobblips/fch.png" />
+    <file src="minimap/jobblips/fix.png" />
+    <file src="minimap/jobblips/fruit.png" />
+    <file src="minimap/jobblips/gasso.png" />
+    <file src="minimap/jobblips/hobby.png" />
+    <file src="minimap/jobblips/jefferson.png" />
+    <file src="minimap/jobblips/ls.png" />
+    <file src="minimap/jobblips/lvh.png" />
+    <file src="minimap/jobblips/lvoil.png" />
+    <file src="minimap/jobblips/oil.png" />
+    <file src="minimap/jobblips/rockshore.png" />
+    <file src="minimap/jobblips/seeburger.png" />
+    <file src="minimap/jobblips/sf.png" />
+    <file src="minimap/jobblips/sh.png" />
+    <file src="minimap/jobblips/warehouse.png" />
+    <file src="minimap/jobblips/wh.png" />
+    <file src="minimap/jobblips/xoomer.png" />
+    <file src="minimap/jobblips/zoldseges.png" />
+    <file src="minimap/newblips/impound.png" />
+    <file src="minimap/newblips/autosiskola.png" />
+    <file src="minimap/newblips/bank.png" />
+    <file src="minimap/newblips/banya.png" />
+    <file src="minimap/newblips/binco.png" />
+    <file src="minimap/newblips/boat.png" />
+    <file src="minimap/newblips/burger.png" />
+    <!--<file src="minimap/newblips/carrent.png" />-->
+    <file src="minimap/newblips/carshop.png" />
+    <file src="minimap/newblips/farmblip.png" />
+    <file src="minimap/newblips/cb.png" />
+    <file src="minimap/newblips/cblip.png" />
+    <file src="minimap/newblips/change.png" />
+    <file src="minimap/newblips/club.png" />
+    <file src="minimap/newblips/crab.png" />
+    <file src="minimap/newblips/favago.png" />
+    <file src="minimap/newblips/fisherman.png" />
+    
+    <file src="minimap/newblips/gyar.png" />
+    <file src="minimap/newblips/hatar.png" />
+    <file src="minimap/newblips/hunting.png" />
+    <file src="minimap/newblips/hunting2.png" />
+    <file src="minimap/newblips/junkyard.png" />
+    <file src="minimap/newblips/kikoto.png" />
+    <file src="minimap/newblips/kocsma.png" />
+    <file src="minimap/newblips/korhaz.png" />
+    <file src="minimap/newblips/kosar.png" />
+    <file src="minimap/newblips/kukamunka.png" />
+    <file src="minimap/newblips/loter.png" />
+    <file src="minimap/newblips/lottoblip.png" />
+    <file src="minimap/newblips/markblip.png" />
+    <file src="minimap/newblips/markblip2.png" />
+    <file src="minimap/newblips/motel.png" />
+    <file src="minimap/newblips/munkajarmu.png" />
+    <file src="minimap/newblips/pd.png" />
+    <file src="minimap/newblips/plaza.png" />
+    <file src="minimap/newblips/repter.png" />
+    <file src="minimap/newblips/sheriffblip.png" />
+    <file src="minimap/newblips/shop_h.png" />
+    <file src="minimap/newblips/szerelo.png" />
+    <file src="minimap/newblips/szerelo_boat.png" />
+    <file src="minimap/newblips/szerelo_heli.png" />
+    <file src="minimap/newblips/templom.png" />
+    <file src="minimap/newblips/tuning.png" />
+    <file src="minimap/newblips/versenypalya.png" />
+    <file src="minimap/newblips/vh.png" />
+    <file src="minimap/newblips/cross.png" />
+    <file src="minimap/newblips/target.png" />
+    <file src="minimap/newblips/north.png" />
+    <file src="minimap/files/f11radarclose.mp3" />
+    <file src="minimap/files/f11radaropen.mp3" />
+    <file src="minimap/files/gpslosticon.png" />
+    <file src="minimap/files/gpslostszoveg.png" />
+    <file src="minimap/files/nosignalszoveg.png" />
+    <file src="minimap/files/arrow.png" />
+    <file src="minimap/files/pin.png" />
+    <file src="minimap/radar.png" />
+    
+    <file src="turbo/base.dds" />
+    <file src="turbo/indicator.dds" />
+    <file src="turbo/light.dds" />
+    <file src="turbo/light2.dds" />
+    <file src="turbo/line.dds" />
+    <file src="turbo/redline.dds" />
+    <file src="turbo/section.dds" />
+    <file src="turbo/section2.dds" />
+    
+    <file src="files/hp.png" />
+    <file src="files/hunger.png" />
+    <file src="files/stamina.png" />
+    
+    <file src="files/sounds/money.mp3" />
+    <file src="files/sounds/money2.mp3" />
+    <file src="files/sounds/moneycount.mp3" />
+    
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <script type="client" src="customchat/sourceC.luac" cache="false" />
+    
+    <script type="client" src="turbo/sourceC.luac" cache="false" />
+    
+    <script type="client" src="speedo/sourceC.luac" cache="false" />
+    <script type="shared" src="speedo/sourceG.luac" cache="false" />
+    
+    <script type="client" src="stamina/sourceC.luac" cache="false" />
+    <script type="server" src="stamina/sourceS.luac" />
+    
+    <export function="getResponsiveMultipler" type="client" />
+    <export function="showInfobox" type="client" />
+    <export function="showInfobox" type="server" />
+    <export function="renderSpeedoForTest" type="client" />
+    <export function="showHUD" type="client" />
+    <export function="hideHUD" type="client" />
+    <export function="renderMinimapExport" type="client" />
+    <export function="setInteriorDoorState" type="client" />
+    <export function="endInteriorBox" type="client" />
+    <export function="showInteriorBox" type="client" />
+    <export function="dxDrawRoundedRectangle" type="client" />
+    <export function="toggleHudMoving" type="client" />
+    <export function="setPokerMode" type="client" />
+    
+    <file src="files/plate.png" />
+    <file src="files/charset.dds" />
+    
+    <file src="files/sounds/traffi.mp3" />
+    <file src="files/sounds/overheat.mp3" />
+    <file src="files/sounds/moneychange.mp3" />
+    <file src="files/sounds/urmasound.mp3" />
+    <file src="files/sounds/loading.mp3" />
+    
+    <file src="files/1.png" />
+    <file src="files/2.png" />
+    <file src="files/3.png" />
+    <file src="files/4.png" />
+    <file src="files/5.png" />
+    <file src="files/6.png" />
+    
+    <file src="files/logo1.png" />
+    <file src="files/logo2.png" />
+    <file src="files/logo3.png" />
+    
+    <file src="files/images/logo1.png" />
+    <file src="files/images/logo2.png" />
+    <file src="files/images/logo3.png" />
+    
+    <file src="files/images/shadow.png" />
+    <file src="files/images/shadow2.png" />
+    <file src="files/images/shadow3.png" />
+    
+    <file src="infobox/logo1.png" />
+    <file src="infobox/logo2.png" />
+    <file src="infobox/logo3.png" />
+    
+    
+    <file src="infobox/ban.png" />
+    <file src="infobox/barn1.png" />
+    <file src="infobox/barn2.png" />
+    <file src="infobox/barn3.png" />
+    <file src="infobox/doorclose.png" />
+    <file src="infobox/dooropen.png" />
+    <file src="infobox/duty.png" />
+    <file src="infobox/garageclose.png" />
+    <file src="infobox/garageopen.png" />
+    <file src="infobox/kick.png" />
+    <file src="infobox/carshop.png" />
+    
+    <file src="files/images/traf1.png" />
+    <file src="files/images/traf2.png" />
+    <file src="files/images/tick.png" />
+    <file src="files/images/tick_on.png" />
+    <file src="files/images/thirst.png" />
+    <file src="files/images/hunger.png" />
+    <file src="files/images/heart.png" />
+    <file src="files/images/shield.png" />
+    <file src="files/images/bolt.png" />
+    <file src="files/images/refresh.png" />
+    <file src="files/images/trashtop.png" />
+    <file src="files/images/trashbody.png" />
+    <file src="files/images/arrows-alt.png" />
+    <file src="files/images/a.png" />
+    <file src="files/images/round.png" />
+    <file src="files/images/vin.png" />
+    <file src="files/images/bone.png" />
+    <file src="files/images/injureLeftArm.png" />
+    <file src="files/images/injureRightArm.png" />
+    <file src="files/images/injureLeftFoot.png" />
+    <file src="files/images/injureRightFoot.png" />
+    
+    <file src="files/shaders/monochrome.fx" />
+    <file src="files/shaders/circle.fx" />
+    
+    <file src="files/fonts/gtaFont.ttf" />
+    <file src="files/fonts/gtaFont2.ttf" />
+    <file src="files/fonts/Roboto.ttf" />
+    <file src="files/fonts/RobotoB.ttf" />
+    <file src="files/fonts/Ubuntu-Regular.ttf" />
+    
+    <oop>true</oop>
+    
+    <file src="speedo/images/mask_tach.png" />
+    <file src="speedo/images/mask_fuel.png" />
+    <file src="speedo/images/mask_nitro.png" />
+    <file src="speedo/images/belt.png" />
+    <file src="speedo/images/engine.png" />
+    <file src="speedo/images/light.png" />
+    <file src="speedo/images/locked.png" />
+    <file src="speedo/images/index.png" />
+    
+    <file src="speedo/font.ttf" />
+    
+    <file src="speedo/newimages/redline.dds" />
+    <file src="speedo/newimages/inlight2.dds" />
+    <file src="speedo/newimages/inlight.dds" />
+    <file src="speedo/newimages/out.dds" />
+    <file src="speedo/newimages/line.dds" />
+    <file src="speedo/newimages/indicator.dds" />
+    <file src="speedo/newimages/section.dds" />
+    <file src="speedo/newimages/led.dds" />
+    <file src="speedo/newimages/ledOn.dds" />
+    <file src="speedo/newimages/right.dds" />
+    <file src="speedo/newimages/left.dds" />
+    
+    <file src="speedo/newimages/engine.dds" />
+    <file src="speedo/newimages/belt.dds" />
+    <file src="speedo/newimages/brake.dds" />
+    <file src="speedo/newimages/oil.dds" />
+    
+    <file src="speedo/newimages/nosbase.dds" />
+    <file src="speedo/newimages/nosfill1.dds" />
+    <file src="speedo/newimages/nosfill2.dds" />
+    <file src="speedo/newimages/noslightning.dds" />
+    <file src="speedo/newimages/nosshine.dds" />
+    
+    <file src="speedo/newimages/fuel.dds" />
+    <file src="speedo/newimages/pulse.dds" />
+    
+    <script src="mobile/sourceC.luac" type="client" cache="false" />
+    <script src="mobile/sourceS.luac" />
+    
+    <file src="mobile/*.ttf" />
+    <file src="mobile/*.png" />
+    <file src="mobile/wallpapers/*.png" />
+    <file src="mobile/sounds/*.mp3" />
+    <file src="mobile/sounds/2/*.mp3" />
+    
+    <file src="mobile/invaders/base.css" />
+    <file src="mobile/invaders/engine.js" />
+    <file src="mobile/invaders/game.js" />
+    <file src="mobile/invaders/game.manifest" />
+    <file src="mobile/invaders/index.html" />
+    <file src="mobile/invaders/images/sprites.png" />
+    
+    <file src="mobile/hextris/images/android.png" />
+    <file src="mobile/hextris/images/facebook-opengraph.png" />
+    <file src="mobile/hextris/images/twitter-opengraph.png" />
+    <file src="mobile/hextris/images/*.svg" />
+    <file src="mobile/hextris/js/*.js" />
+    <file src="mobile/hextris/vendor/*.js" />
+    <file src="mobile/hextris/favicon.ico" />
+    <file src="mobile/hextris/index.html" />
+    
+    <file src="mobile/hextris/style/fa/css/*.css" />
+    <file src="mobile/hextris/style/fa/fonts/FontAwesome.otf" />
+    <file src="mobile/hextris/style/fa/fonts/fontawesome-webfont.eot" />
+    <file src="mobile/hextris/style/fa/fonts/fontawesome-webfont.svg" />
+    <file src="mobile/hextris/style/fa/fonts/fontawesome-webfont.ttf" />
+    <file src="mobile/hextris/style/fa/fonts/fontawesome-webfont.woff" />
+    
+    <file src="mobile/hextris/style/fonts/*.otf" />
+    <file src="mobile/hextris/style/fonts/*.ttf" />
+    <file src="mobile/hextris/style/fonts/*.woff" />
+    <file src="mobile/hextris/style/*.css" />
+    
+    <script type="client" src="infobox/sourceC.luac" cache="false" />
+    <script type="client" src="minimap/sourceC.luac" cache="false" />
+</meta>

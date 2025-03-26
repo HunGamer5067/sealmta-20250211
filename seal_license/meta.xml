@@ -1,0 +1,30 @@
+<meta>
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <file src="files/photo.wav" />
+    
+    <file src="files/lunabar.ttf" />
+    <file src="files/IckyticketMono-nKpJ.ttf" />
+    
+    <file src="files/dl.dds" />
+    <file src="files/dlblur.dds" />
+    
+    <file src="files/fs.dds" />
+    <file src="files/fsblur.dds" />
+    
+    <file src="files/id.dds" />
+    <file src="files/idblur.dds" />
+    
+    <file src="files/wp.dds" />
+    <file src="files/wpblur.dds" />
+    
+    <file src="files/lamin.dds" />
+    
+    <export function="showLicense" type="client" />
+    <export function="hideLicense" type="client" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    <download_priority_group>-160</download_priority_group>
+</meta>

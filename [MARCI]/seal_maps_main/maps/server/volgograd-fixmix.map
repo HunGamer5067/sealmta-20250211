@@ -1,0 +1,7 @@
+<map edf:definitions="editor_main">
+    <object id="object (BlackBag2) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1265" scale="1" doublesided="false" collisions="true" posX="1154.6" posY="-1443.1" posZ="15.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (BinNt03_LA) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1333" scale="1" doublesided="false" collisions="true" posX="1154.3" posY="-1436.3" posZ="15.7" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (PROC_RUBBISH_3) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="2671" scale="1" doublesided="false" collisions="true" posX="1153.9" posY="-1443" posZ="14.8" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (bigdollar) (1)" breakable="false" interior="0" alpha="255" dimension="0" model="1274" scale="1" doublesided="false" collisions="true" posX="1155.1" posY="-1438.7" posZ="16.8" rotX="0" rotY="0" rotZ="-90"></object>
+    <object id="object (bigdollar) (2)" breakable="false" interior="0" alpha="255" dimension="0" model="1274" scale="1" doublesided="false" collisions="true" posX="1155.1" posY="-1441.6" posZ="16.7" rotX="0" rotY="0" rotZ="-90"></object>
+</map>

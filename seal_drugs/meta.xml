@@ -1,0 +1,8 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceG.luac" type="shared" cache="false" />
+    
+    <file src="files/bar.dds" />
+    
+    <download_priority_group>-50</download_priority_group>
+</meta>

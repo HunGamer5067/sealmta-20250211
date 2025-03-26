@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceS.lua" type="server" />
+    <script src="removeC_v4.lua" type="client" cache="false" />
+    <script src="sourceC.lua" type="client" cache="false" />
+    <download_priority_group>-78</download_priority_group>
+</meta>

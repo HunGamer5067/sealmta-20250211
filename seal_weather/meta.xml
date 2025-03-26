@@ -1,0 +1,5 @@
+<meta>
+    <script src="sourceS.luac" type="server" />
+    <script src="sourceC.luac" type="client" cache="false" />
+    <download_priority_group>-137</download_priority_group>
+</meta>

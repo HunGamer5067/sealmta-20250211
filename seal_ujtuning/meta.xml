@@ -1,0 +1,10 @@
+﻿<Auto-Meta-Tool-MTA-SA-By-MahdiMafia>
+    
+    <script src="c_veh_mods.lua" type="client" cache="false" />
+    
+    <file src="*.txd" />
+    <file src="*.dff" />
+    
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728"></min_mta_version>
+    <download_priority_group>-126</download_priority_group>
+</Auto-Meta-Tool-MTA-SA-By-MahdiMafia>

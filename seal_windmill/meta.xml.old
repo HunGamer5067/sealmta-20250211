@@ -1,0 +1,11 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    <file src="files/wind.mp3" />
+    <file src="files/windmill.txd" />
+    <file src="files/windmill_alap.col" />
+    <file src="files/windmill_alap.dff" />
+    <file src="files/windmill_rotor.col" />
+    <file src="files/windmill_rotor.dff" />
+    <download_priority_group>-154</download_priority_group>
+</meta>

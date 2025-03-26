@@ -1,0 +1,52 @@
+<meta>
+    <download_priority_group>-40</download_priority_group>
+    
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    
+    <file src="horns/1.wav" />
+    <file src="horns/2.wav" />
+    <file src="horns/3.wav" />
+    <file src="horns/4.wav" />
+    <file src="horns/5.wav" />
+    <file src="horns/6.wav" />
+    <file src="horns/7.wav" />
+    <file src="horns/8.wav" />
+    <file src="horns/9.wav" />
+    <file src="horns/10.wav" />
+    <file src="horns/11.wav" />
+    <file src="horns/12.wav" />
+    <file src="horns/13.wav" />
+    <file src="horns/14.wav" />
+    <file src="horns/15.wav" />
+    <file src="horns/16.wav" />
+    <file src="horns/17.wav" />
+    <file src="horns/18.wav" />
+    <file src="horns/19.wav" />
+    <file src="horns/20.wav" />
+    <file src="horns/21.wav" />
+    <file src="horns/22.wav" />
+    <file src="horns/23.wav" />
+    <file src="horns/24.wav" />
+    <file src="horns/25.wav" />
+    <file src="horns/26.wav" />
+    <file src="horns/27.wav" />
+    <file src="horns/28.wav" />
+    <file src="horns/29.wav" />
+    <file src="horns/30.wav" />
+    <file src="horns/31.wav" />
+    <file src="horns/32.wav" />
+    <file src="horns/33.wav" />
+    <file src="horns/34.wav" />
+    <file src="horns/35.wav" />
+    <file src="horns/36.wav" />
+    <file src="horns/37.wav" />
+    <file src="horns/38.wav" />
+    <file src="horns/39.wav" />
+    <file src="horns/40.wav" />
+    <file src="horns/41.wav" />
+    <file src="horns/42.wav" />
+    <file src="horns/43.wav" />
+    <file src="horns/44.wav" />
+</meta>

@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    
+    <file src="images/*.dds" />
+    <download_priority_group>-45</download_priority_group>
+</meta>

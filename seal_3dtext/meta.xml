@@ -1,0 +1,8 @@
+<meta>
+    <script type="client" src="sourceC.luac" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    
+    <file src="files/opensans_semibold.ttf" />
+    <download_priority_group>-15</download_priority_group>
+</meta>

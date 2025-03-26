@@ -1,0 +1,9 @@
+<map edf:definitions="editor_main">
+    <object id="object (gatehouse2_SFSe) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="10832" scale="1" doublesided="false" collisions="true" posX="1461.1" posY="-1504.5" posZ="14.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (elecfence_BAR) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="987" scale="1" doublesided="false" collisions="true" posX="1545.9" posY="-1483.6" posZ="12.5" rotX="0" rotY="0" rotZ="275.75"></object>
+    <object id="object (elecfence_BAR) (2)" breakable="true" interior="0" alpha="255" dimension="0" model="987" scale="1" doublesided="false" collisions="true" posX="1547" posY="-1495.6" posZ="12.6" rotX="0" rotY="0" rotZ="275.746"></object>
+    <object id="object (chinaTgarageDoor) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="2957" scale="1" doublesided="false" collisions="true" posX="1526.3" posY="-1483.4" posZ="14.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (chinaTgarageDoor) (2)" breakable="true" interior="0" alpha="255" dimension="0" model="2957" scale="1" doublesided="false" collisions="true" posX="1512.1" posY="-1483.4" posZ="14.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (chinaTgarageDoor) (3)" breakable="true" interior="0" alpha="255" dimension="0" model="2957" scale="1" doublesided="false" collisions="true" posX="1540.7" posY="-1483.4" posZ="14.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (cr1_door) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="3029" scale="1" doublesided="false" collisions="true" posX="1495.75" posY="-1487.4" posZ="12.6" rotX="0" rotY="0" rotZ="0"></object>
+</map>

@@ -1,0 +1,45 @@
+<meta>
+    <download_priority_group>-17</download_priority_group>
+    
+    <script type="client" src="sourceC.luac" cache="false" />
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="server" src="manage/sourceS.luac" />
+    
+    <script type="server" src="adminLogs.luac" />
+    
+    <script type="server" src="playerCommandsS.luac" />
+    <script type="client" src="playerCommandsC.luac" cache="false" />
+    
+    <script type="server" src="vehicleCommandsS.luac" />
+    <script type="client" src="vehicleCommandsC.luac" cache="false" />
+    
+    <script type="client" src="flyC.luac" cache="false" />
+    <script type="client" src="gameInteriorsC.luac" cache="false" />
+    
+    <export type="client" function="getFly" />
+    
+    <export type="shared" function="getPlayerAdminLevel" />
+    <export type="shared" function="getPlayerAdminNick" />
+    <export type="shared" function="getPlayerAdminTitle" />
+    <export type="shared" function="getAdminLevelColor" />
+    <export type="shared" function="isPlayerHavePermission" />
+    
+    <export type="server" function="showAdminMessageFor" />
+    <export type="server" function="showAdminMessage" />
+    <export type="server" function="showMessageForAdmins" />
+    <export type="server" function="showAdminLog" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    
+    <file src="files/Rubik.ttf" />
+    <file src="files/close.png" />
+    <file src="files/open.mp3" />
+    <file src="files/close.mp3" />
+    <file src="files/select.mp3" />
+    
+    <file src="files/error.mp3" />
+    <file src="files/pm.mp3" />
+    <file src="files/epanel.mp3" />
+    <file src="himnusz.mp3" />
+</meta>

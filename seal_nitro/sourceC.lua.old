@@ -1,0 +1,55 @@
+local screenX, screenY = guiGetScreenSize()
+local shader = false
+local progress = 0
+local eff = 0
+local screenSrc = false
+local vehicleFOV = getCameraFieldOfView("vehicle")
+local vehicleMaxFOV = getCameraFieldOfView("vehicle_max")
+
+addEventHandler("onClientResourceStart", resourceRoot, function()
+    screenSrc = dxCreateScreenSource(screenX, screenY)
+    dxUpdateScreenSource(screenSrc, true)
+    shader = dxCreateShader("files/nitro.fx")
+    dxSetShaderValue(shader, "sBaseTexture", screenSrc)
+    testShader()
+end)
+
+function testShader()
+    veh = getPedOccupiedVehicle(localPlayer)
+    progress = 1
+    dxSetShaderValue(shader, "r", 0.2)
+    dxSetShaderValue(shader, "g", 0.1)
+    dxSetShaderValue(shader, "b", -0.05)
+end
+
+function getVehicleSpeed(veh)
+    if isElement(veh) then
+        local x, y, z = getElementVelocity(veh)
+        return math.sqrt(x ^ 2 + y ^ 2 + z ^ 2) * 187.5
+    end
+end
+
+addEvent("nosEffectState", true)
+addEventHandler("nosEffectState", getRootElement(), function(state)
+    if isElement(source) and isElementStreamedIn(source) then
+        local veh = getPedOccupiedVehicle(localPlayer)
+    end
+end)
+
+addEventHandler("onClientPreRender", getRootElement(), function(delta)
+    if progress > 0 then
+        local speed = veh and getVehicleSpeed(veh) or 0
+        eff = math.min(1, math.max(0, speed / 150 * progress))
+        iprint(eff)
+        dxSetShaderValue(shader, "blurValue", eff)
+        setCameraFieldOfView("vehicle", vehicleFOV + 10 * eff)
+        setCameraFieldOfView("vehicle_max", vehicleMaxFOV + 10 * eff)
+    end
+end)
+
+addEventHandler("onClientRender", getRootElement(), function()
+    if progress > 0 then
+        dxUpdateScreenSource(screenSrc, true)
+        dxDrawImage(math.random(-1000, 1000) / 800 * eff, math.random(-1000, 1000) / 800 * eff, screenX, screenY, shader)
+    end
+end, true, "low-9999999999")

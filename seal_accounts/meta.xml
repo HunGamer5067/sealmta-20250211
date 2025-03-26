@@ -1,0 +1,14 @@
+<meta>
+    <download_priority_group>-145</download_priority_group>
+    
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <export type="client" function="showInfo" />
+    <export type="server" function="showInfo" />
+    
+    <file src="files/logo.png" />
+    <file src="files/vignette.png" />
+    <file src="files/gradient.png" />
+    <file src="files/gradient2.png" />
+</meta>

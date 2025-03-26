@@ -1,0 +1,20 @@
+<meta>
+    <script src="soundC.luac" type="client" cache="false" />
+    <script src="shaderC.luac" type="client" cache="false" />
+    
+    <script src="sourceG.luac" type="shared" cache="false" />
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <export function="getChargingPortOffset" type="shared" />
+    
+    <file src="sounds/charger.mp3" />
+    <file src="sounds/ev.mp3" />
+    <file src="sounds/pickup.mp3" />
+    <file src="sounds/plug.mp3" />
+    <file src="sounds/plugin.mp3" />
+    <file src="sounds/plugout.mp3" />
+    
+    <min_mta_version client="1.6.0" server="1.6.0" />
+    <download_priority_group>-156</download_priority_group>
+</meta>

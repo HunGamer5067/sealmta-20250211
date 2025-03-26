@@ -1,0 +1,59 @@
+local longVehicles = {
+	[409] = true,
+	[431] = true,
+	[437] = true,
+	[408] = 1500,
+	[407] = true,
+	[544] = true,
+	[578] = true,
+	[443] = true,
+	[515] = 5000,
+	[514] = 5000,
+	[508] = 1000
+}
+
+addEventHandler("onResourceStart", getResourceRootElement(),
+	function ()
+		for i = 1, #availableBorders do
+			setElementData(resourceRoot, "border." .. i .. ".mode", 1)
+			setElementData(resourceRoot, "border." .. i .. ".state", false)
+		end
+	end)
+
+addEvent("openTheBorder", true)
+addEventHandler("openTheBorder", getRootElement(),
+	function (borderId, colShapeId, vehicle)
+		if borderId and colShapeId and vehicle and client == source then
+			if exports.seal_core:takeMoneyEx(source, 15000, "borderCross") then
+				setElementData(vehicle, "borderTargetColShapeId", colShapeId)
+				setElementData(resourceRoot, "border." .. borderId .. ".state", true)
+			else
+				exports.seal_hud:showInfobox(source, "e", "Nincs elég pénzed a határ átlépéséhez!")
+			end
+		end
+	end)
+
+addEvent("closeTheBorder", true)
+addEventHandler("closeTheBorder", getRootElement(),
+	function (borderId, colShapeId, vehicle)
+		if borderId and colShapeId and vehicle and isElement(vehicle) and getElementData(vehicle, "borderTargetColShapeId") and getElementData(resourceRoot, "border." .. borderId .. ".state") then
+			local model = getElementModel(vehicle)
+
+			removeElementData(vehicle, "borderTargetColShapeId")
+
+			if longVehicles[model] then
+				setTimer(setElementData, tonumber(longVehicles[model]) or 2000, 1, resourceRoot, "border." .. borderId .. ".state", false)
+			else
+				setElementData(resourceRoot, "border." .. borderId .. ".state", false)
+			end
+			triggerClientEvent(getElementsByType("player"), "warnAboutBorderCross", source, vehicle)
+		end
+	end)
+
+addEvent("warnAboutBorderSet", true)
+addEventHandler("warnAboutBorderSet", getRootElement(),
+	function (playerName, borderId, set)
+		if playerName and borderId and set then
+			triggerClientEvent(getElementsByType("player"), "warnAboutBorderSet", source, playerName, borderId, set)
+		end
+	end)

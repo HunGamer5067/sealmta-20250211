@@ -1,0 +1,28 @@
+addEventHandler("onClientResourceStart", resourceRoot, function()
+
+
+
+col=engineLoadCOL("cuntwland60b.col")
+engineReplaceCOL(col, 17126)
+
+col=engineLoadCOL("cuntwland64b.col")
+engineReplaceCOL(col, 17129)
+
+txd=engineLoadTXD("cuntwlandwest.txd")
+engineImportTXD(txd, 17126) --ID de objeto a sustituir
+
+dff=engineLoadDFF("cuntwland60b.dff")
+engineReplaceModel(dff, 17126, true)
+
+engineSetModelLODDistance(17126, 700)
+
+txd=engineLoadTXD("cuntwlandwest.txd")
+engineImportTXD(txd, 17129) --ID de objeto a sustituir
+
+dff=engineLoadDFF("cuntwland64b.dff")
+engineReplaceModel(dff, 17129, true)
+
+engineSetModelLODDistance(17129, 700)
+
+
+end)

@@ -1,0 +1,119 @@
+<meta>
+    <min_mta_version server="1.5.6-9.18728" client="1.5.6-9.18728" />
+    
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="streamC.luac" type="client" cache="false" />
+    <script src="sourceG.luac" type="shared" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <export function="getCustomPjTextureName" type="client" />
+    <export function="getCustomPjPrice" type="client" />
+    <export function="startPaintjobEditor" type="client" />
+    <export function="stopPaintjobEditor" type="client" />
+    
+    <file src="files/*.dds" />
+    <file src="files/*.fx" />
+    
+    <file src="files/decals/*.dds" />
+    
+    <file src="files/decals/32/1shapes/*.dds" />
+    <file src="files/decals/32/aftermarket/*.dds" />
+    <file src="files/decals/32/aftermarket2/*.dds" />
+    <file src="files/decals/32/animals/*.dds" />
+    <file src="files/decals/32/flags/*.dds" />
+    <file src="files/decals/32/flames/*.dds" />
+    <file src="files/decals/32/gradients/*.dds" />
+    <file src="files/decals/32/grunge/*.dds" />
+    <file src="files/decals/32/h1/*.dds" />
+    <file src="files/decals/32/h2/*.dds" />
+    <file src="files/decals/32/manufacturer/*.dds" />
+    <file src="files/decals/32/manufacturer2/*.dds" />
+    <file src="files/decals/32/mintazatok/*.dds" />
+    <file src="files/decals/32/pinstripe/*.dds" />
+    <file src="files/decals/32/racing/*.dds" />
+    <file src="files/decals/32/skull/*.dds" />
+    <file src="files/decals/32/splashpaint/*.dds" />
+    <file src="files/decals/32/stickers/*.dds" />
+    <file src="files/decals/32/stickers2/*.dds" />
+    <file src="files/decals/32/textures/*.dds" />
+    <file src="files/decals/32/tribal/*.dds" />
+    <file src="files/decals/32/xmas1/*.dds" />
+    <file src="files/decals/32/xmas2/*.dds" />
+    
+    <file src="files/decals/64/1shapes/*.dds" />
+    <file src="files/decals/64/aftermarket/*.dds" />
+    <file src="files/decals/64/aftermarket2/*.dds" />
+    <file src="files/decals/64/animals/*.dds" />
+    <file src="files/decals/64/flags/*.dds" />
+    <file src="files/decals/64/flames/*.dds" />
+    <file src="files/decals/64/gradients/*.dds" />
+    <file src="files/decals/64/grunge/*.dds" />
+    <file src="files/decals/64/h1/*.dds" />
+    <file src="files/decals/64/h2/*.dds" />
+    <file src="files/decals/64/manufacturer/*.dds" />
+    <file src="files/decals/64/manufacturer2/*.dds" />
+    <file src="files/decals/64/mintazatok/*.dds" />
+    <file src="files/decals/64/pinstripe/*.dds" />
+    <file src="files/decals/64/racing/*.dds" />
+    <file src="files/decals/64/skull/*.dds" />
+    <file src="files/decals/64/splashpaint/*.dds" />
+    <file src="files/decals/64/stickers/*.dds" />
+    <file src="files/decals/64/stickers2/*.dds" />
+    <file src="files/decals/64/textures/*.dds" />
+    <file src="files/decals/64/tribal/*.dds" />
+    <file src="files/decals/64/xmas1/*.dds" />
+    <file src="files/decals/64/xmas2/*.dds" />
+    
+    <file src="files/decals/128/1shapes/*.dds" />
+    <file src="files/decals/128/aftermarket/*.dds" />
+    <file src="files/decals/128/aftermarket2/*.dds" />
+    <file src="files/decals/128/animals/*.dds" />
+    <file src="files/decals/128/flags/*.dds" />
+    <file src="files/decals/128/flames/*.dds" />
+    <file src="files/decals/128/gradients/*.dds" />
+    <file src="files/decals/128/grunge/*.dds" />
+    <file src="files/decals/128/h1/*.dds" />
+    <file src="files/decals/128/h2/*.dds" />
+    <file src="files/decals/128/manufacturer/*.dds" />
+    <file src="files/decals/128/manufacturer2/*.dds" />
+    <file src="files/decals/128/mintazatok/*.dds" />
+    <file src="files/decals/128/pinstripe/*.dds" />
+    <file src="files/decals/128/racing/*.dds" />
+    <file src="files/decals/128/skull/*.dds" />
+    <file src="files/decals/128/splashpaint/*.dds" />
+    <file src="files/decals/128/stickers/*.dds" />
+    <file src="files/decals/128/stickers2/*.dds" />
+    <file src="files/decals/128/textures/*.dds" />
+    <file src="files/decals/128/tribal/*.dds" />
+    <file src="files/decals/128/xmas1/*.dds" />
+    <file src="files/decals/128/xmas2/*.dds" />
+    
+    <file src="files/decals/256/1shapes/*.dds" />
+    <file src="files/decals/256/aftermarket/*.dds" />
+    <file src="files/decals/256/aftermarket2/*.dds" />
+    <file src="files/decals/256/animals/*.dds" />
+    <file src="files/decals/256/flags/*.dds" />
+    <file src="files/decals/256/flames/*.dds" />
+    <file src="files/decals/256/gradients/*.dds" />
+    <file src="files/decals/256/grunge/*.dds" />
+    <file src="files/decals/256/h1/*.dds" />
+    <file src="files/decals/256/h2/*.dds" />
+    <file src="files/decals/256/manufacturer/*.dds" />
+    <file src="files/decals/256/manufacturer2/*.dds" />
+    <file src="files/decals/256/mintazatok/*.dds" />
+    <file src="files/decals/256/pinstripe/*.dds" />
+    <file src="files/decals/256/racing/*.dds" />
+    <file src="files/decals/256/skull/*.dds" />
+    <file src="files/decals/256/splashpaint/*.dds" />
+    <file src="files/decals/256/stickers/*.dds" />
+    <file src="files/decals/256/stickers2/*.dds" />
+    <file src="files/decals/256/textures/*.dds" />
+    <file src="files/decals/256/tribal/*.dds" />
+    <file src="files/decals/256/xmas1/*.dds" />
+    <file src="files/decals/256/xmas2/*.dds" />
+    
+    <file src="files/fonts/*.dds" />
+    <file src="files/fonts/*.otf" />
+    <file src="files/fonts/*.ttf" />
+    <download_priority_group>-41</download_priority_group>
+</meta>

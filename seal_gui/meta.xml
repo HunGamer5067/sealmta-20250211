@@ -1,0 +1,262 @@
+<meta>
+    <download_priority_group>-1</download_priority_group>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <script src="errorG.luac" type="shared" cache="false" />
+    
+    <script src="backgroundC.luac" type="client" cache="false" />
+    <script src="buttonC.luac" type="client" cache="false" />
+    <script src="checkboxC.luac" type="client" cache="false" />
+    <script src="fontawesomeC.luac" type="client" cache="false" />
+    <script src="fontC.luac" type="client" cache="false" />
+    <script src="inputC.luac" type="client" cache="false" />
+    <script src="labelC.luac" type="client" cache="false" />
+    <script src="logoC.luac" type="client" cache="false" />
+    <script src="sliderC.luac" type="client" cache="false" />
+    <script src="toggleC.luac" type="client" cache="false" />
+    <script src="windowC.luac" type="client" cache="false" />
+    
+    <file src="cursor/link.dds" />
+    <file src="cursor/minus.dds" />
+    <file src="cursor/move.dds" />
+    <file src="cursor/normal.dds" />
+    <file src="cursor/plus.dds" />
+    <file src="cursor/resize1.dds" />
+    <file src="cursor/resize2.dds" />
+    <file src="cursor/resize3.dds" />
+    <file src="cursor/resize4.dds" />
+    <file src="cursor/wrench.dds" />
+    
+    <file src="fa/brands.otf" />
+    <file src="fa/duotone.otf" />
+    <file src="fa/icons.json" />
+    <file src="fa/light.otf" />
+    <file src="fa/regular.otf" />
+    <file src="fa/solid.otf" />
+    
+    <file src="files/duty.dds" />
+    <file src="files/e.dds" />
+    <file src="files/glow.dds" />
+    <file src="files/glowside.dds" />
+    <file src="files/i.dds" />
+    <file src="files/infocircle.dds" />
+    <file src="files/paper.jpg" />
+    <file src="files/paste.html" />
+    <file src="files/s.dds" />
+    <file src="files/vignette.dds" />
+    <file src="files/w.dds" />
+    
+    <file src="fonts/BebasNeueBold.otf" />
+    <file src="fonts/BebasNeueLight.otf" />
+    <file src="fonts/BebasNeueRegular.otf" />
+    <file src="fonts/IckyticketMono-nKpJ.ttf" />
+    <file src="fonts/Impact.ttf" />
+    <file src="fonts/Pixellari.ttf" />
+    <file src="fonts/SweetSixteen.ttf" />
+    <file src="fonts/Ubuntu-B.ttf" />
+    <file src="fonts/Ubuntu-L.ttf" />
+    <file src="fonts/Ubuntu-LI.ttf" />
+    <file src="fonts/Ubuntu-R.ttf" />
+    <file src="fonts/W95FA.otf" />
+    
+    <file src="logo/astral/0.dds" />
+    <file src="logo/astral/1.dds" />
+    <file src="logo/astral/2.dds" />
+    <file src="logo/astral/3.dds" />
+    <file src="logo/astral/4.dds" />
+    
+    <file src="sounds/click1.wav" />
+    <file src="sounds/click2.wav" />
+    <file src="sounds/click3.wav" />
+    <file src="sounds/duty.wav" />
+    <file src="sounds/error.wav" />
+    <file src="sounds/h1.wav" />
+    <file src="sounds/h2.wav" />
+    <file src="sounds/h3.wav" />
+    <file src="sounds/h4.wav" />
+    <file src="sounds/hover.wav" />
+    <file src="sounds/noti.wav" />
+    <file src="sounds/offduty.wav" />
+    <file src="sounds/selectdone.wav" />
+    <file src="sounds/success.wav" />
+    <file src="sounds/warning.wav" />
+    
+    <!-- sourceC.lua -->
+    <export function="setInputPasteDisabled" type="client" />
+    <export function="getTitleBarHeight" type="client" />
+    <export function="convertSizeToP2" type="client" />
+    <export function="playUISound" type="client" />
+    <export function="setGuiFontScheme" type="client" />
+    <export function="setGuiColorScheme" type="client" />
+    <export function="getColorHex" type="client" />
+    <export function="getColorCode" type="client" />
+    <export function="setElementColorTableToData" type="client" />
+    <export function="getColorSetCodeToColor" type="client" />
+    <export function="getColorCodeToColor" type="client" />
+    <export function="setElementColorToData" type="client" />
+    <export function="getColorCodeHex" type="client" />
+    <export function="getGradientTick" type="client" />
+    <export function="getGradientFilename" type="client" />
+    <export function="getGradient2Filename" type="client" />
+    <export function="getGradient3Filename" type="client" />
+    <export function="getGradient4Filename" type="client" />
+    <export function="setCursorType" type="client" />
+    <export function="setGuiParent" type="client" />
+    <export function="getGuiParent" type="client" />
+    <export function="getGuiPosition" type="client" />
+    <export function="isGuiRenderDisabled" type="client" />
+    <export function="setGuiRenderDisabled" type="client" />
+    <export function="getGuiRealPosition" type="client" />
+    <export function="setGuiPosition" type="client" />
+    <export function="setGuiPositionAnimated" type="client" />
+    <export function="getGuiSize" type="client" />
+    <export function="setGuiSize" type="client" />
+    <export function="setGuiSizeAnimated" type="client" />
+    <export function="createGuiElement" type="client" />
+    <export function="deleteAllChildren" type="client" />
+    <export function="setDeleteEvent" type="client" />
+    <export function="deleteGuiElement" type="client" />
+    <export function="updateScreenSourceBefore" type="client" />
+    <export function="setElementGradientToData" type="client" />
+    <export function="setGuiBackground" type="client" />
+    <export function="setGuiHover" type="client" />
+    <export function="setImageCrop" type="client" />
+    <export function="setImageUV" type="client" />
+    <export function="setImageDDS" type="client" />
+    <export function="resetImageDDS" type="client" />
+    <export function="setImageShadow" type="client" />
+    <export function="setImageFile" type="client" />
+    <export function="setImageRotation" type="client" />
+    <export function="setImageSpinner" type="client" />
+    <export function="setImageFadeHover" type="client" />
+    <export function="setImageColor" type="client" />
+    <export function="setGuiHoverable" type="client" />
+    <export function="getGuiHoverable" type="client" />
+    <export function="setGuiBoundingBox" type="client" />
+    <export function="setImageRightCornerHover" type="client" />
+    <export function="setGuiHrColor" type="client" />
+    <export function="fadeIn" type="client" />
+    <export function="fadeOut" type="client" />
+    <export function="showTooltip" type="client" />
+    <export function="showInfobox" type="client" />
+    <export function="showInfobox" type="server" />
+    <export function="showLoadingScreen" type="client" />
+    <export function="setDDSPreview" type="client" />
+    <export function="thousandsStepper" type="client" />
+    <export function="guiToBack" type="client" />
+    <export function="guiToFront" type="client" />
+    <export function="isGuiElementValid" type="client" />
+    <export function="guiSetTooltip" type="client" />
+    <export function="guiSetTooltipImage" type="client" />
+    <export function="guiSetTooltipImageDDS" type="client" />
+    <export function="guiSetPositionAbsolute" type="client" />
+    <export function="setElementDisabled" type="client" />
+    <export function="setHoverEvent" type="client" />
+    <export function="setClickSound" type="client" />
+    <export function="setDisableClickSound" type="client" />
+    <export function="setClickArgument" type="client" />
+    <export function="setClickEvent" type="client" />
+    <export function="disableClickTrough" type="client" />
+    <export function="formatDate" type="client" />
+    
+    <!-- backgroundC.lua -->
+    <export function="setGuiBackgroundAlpha" type="client" />
+    <export function="setGuiBackgroundBorder" type="client" />
+    
+    <!-- buttonC.lua -->
+    <export function="setButtonFont" type="client" />
+    <export function="setButtonIcon" type="client" />
+    <export function="setButtonIconDDS" type="client" />
+    <export function="setButtonTextPadding" type="client" />
+    <export function="setButtonTextAlign" type="client" />
+    <export function="setButtonTextColor" type="client" />
+    <export function="setButtonIconColor" type="client" />
+    <export function="setButtonText" type="client" />
+    <export function="getButtonText" type="client" />
+    
+    <!-- checkboxC.lua -->
+    <export function="setCheckboxFont" type="client" />
+    <export function="setCheckboxIcon" type="client" />
+    <export function="getCheckboxWidth" type="client" />
+    <export function="setCheckboxColor" type="client" />
+    <export function="setCheckboxText" type="client" />
+    <export function="isCheckboxChecked" type="client" />
+    <export function="setCheckboxChecked" type="client" />
+    <export function="setCheckboxHoverable" type="client" />
+    
+    <!-- errorG.lua -->
+    <export function="throwGuiError" type="shared" />
+    <export function="throwGuiWarning" type="shared" />
+    
+    <!-- fontawesomeC.lua -->
+    <export function="getFaIconFilename" type="client" />
+    <export function="getFaTicks" type="client" />
+    
+    <!-- fontC.lua -->
+    <export function="getTextWidthFont" type="client" />
+    <export function="getFontHeight" type="client" />
+    <export function="getFontScale" type="client" />
+    <export function="getFont" type="client" />
+    
+    <!-- inputC.lua -->
+    <export function="setInputUppercaseOnly" type="client" />
+    <export function="setInputColor" type="client" />
+    <export function="setInputNumberOnly" type="client" />
+    <export function="setInputNumberNegative" type="client" />
+    <export function="setInputFontPaddingHeight" type="client" />
+    <export function="setActiveInput" type="client" />
+    <export function="setInputDisableBorder" type="client" />
+    <export function="setInputLineHeight" type="client" />
+    <export function="setInputMultiline" type="client" />
+    <export function="setInputFont" type="client" />
+    <export function="setInputMaxLength" type="client" />
+    <export function="setInputChangeEvent" type="client" />
+    <export function="setInputIcon" type="client" />
+    <export function="setInputPassword" type="client" />
+    <export function="setInputPlaceholder" type="client" />
+    <export function="setInputBorderSize" type="client" />
+    <export function="setInputValue" type="client" />
+    <export function="getInputValue" type="client" />
+    <export function="getActiveInput" type="client" />
+    <export function="setActiveInput" type="client" />
+    <export function="resetInput" type="client" />
+    
+    <!-- labelC.lua -->
+    <export function="setLabelRotation" type="client" />
+    <export function="setLabelClip" type="client" />
+    <export function="setLabelWordBreak" type="client" />
+    <export function="setLabelAlignment" type="client" />
+    <export function="setLabelShadow" type="client" />
+    <export function="setLabelFont" type="client" />
+    <export function="setLabelColor" type="client" />
+    <export function="setLabelText" type="client" />
+    <export function="getLabelFontHeight" type="client" />
+    <export function="getLabelTextWidth" type="client" />
+    
+    <!-- sliderC.lua -->
+    <export function="setSliderChangeEvent" type="client" />
+    <export function="setSliderBorder" type="client" />
+    <export function="setSliderSize" type="client" />
+    <export function="setSliderColor" type="client" />
+    <export function="setSliderValue" type="client" />
+    <export function="getSliderValue" type="client" />
+    
+    <!-- toggleC.lua -->
+    <export function="setToggleColor" type="client" />
+    <export function="setToggleState" type="client" />
+    <export function="getToggleState" type="client" />
+    
+    <!-- windowC.lua -->
+    <export function="setWindowMoveEvent" type="client" />
+    <export function="setWindowCloseButton" type="client" />
+    <export function="setWindowColors" type="client" />
+    <export function="setWindowTitle" type="client" />
+    <export function="setWindowElementMaxDistance" type="client" />
+    
+    <!-- logoC.lua -->
+    <export function="setLogoAnimated" type="client" />
+    <export function="playLogoAnimation" type="client" />
+    
+    <min_mta_version client="1.6.0" server="1.6.0" />
+</meta>

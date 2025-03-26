@@ -1,0 +1,22 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    
+    <file src="files/barrio1_lae2.txd" />
+    <file src="files/BlockK_LAe2.dff" />
+    <file src="files/cluckinbell1_lae.dff" />
+    <file src="files/furniture_lae.dff" />
+    <file src="files/furniture_lae2.txd" />
+    <file src="files/barrio3b_lae.dff" />
+    <file src="files/comedbarrio1_la.txd" />
+    <file src="files/eastls1_lae2.txd" />
+    <file src="files/gangshops1_lae.dff" />
+    <file src="files/lae2_ground09.dff" />
+    <file src="files/lae2_ground12.dff" />
+    <file src="files/lae2_roads32.dff" />
+    <file src="files/lae2_roads33.dff" />
+    <file src="files/lae2_roads35.dff" />
+    <file src="files/lae2roads.txd" />
+    <file src="files/landlae2b.txd" />
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728"></min_mta_version>
+    <download_priority_group>-54</download_priority_group>
+</meta>

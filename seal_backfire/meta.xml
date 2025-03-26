@@ -1,0 +1,37 @@
+<meta>
+    
+    <download_priority_group>-22</download_priority_group>
+    
+    <script type="server" src="sourceS.lua" />
+    <script type="client" src="sourceC.lua" cache="false" />
+    
+    <file src="sound/0.wav" />
+    <file src="sound/1.wav" />
+    <file src="sound/2.wav" />
+    <file src="sound/3.wav" />
+    <file src="sound/4.wav" />
+    <file src="sound/5.wav" />
+    <file src="sound/6.wav" />
+    <file src="sound/7.wav" />
+    <file src="sound/8.wav" />
+    <file src="sound/9.wav" />
+    <file src="sound/bfnew.MP3" />
+    <file src="sound/popcorn.mp3" />
+    <file src="sound/10.wav" />
+    <file src="sound/11.wav" />
+    <file src="sound/12.wav" />
+    <file src="images/1.png" />
+    <file src="images/2.png" />
+    <file src="images/3.png" />
+    <file src="images/shader.fx" />
+    
+    <file src="images/fire.dds" />
+    <file src="images/spark.dds" />
+    
+    <export type="client" function="createBackfireSelector" />
+    <export type="client" function="destroyBackfireSelector" />
+    <export type="client" function="getBackfireDatas" />
+    
+    <min_mta_version server="1.5.7" client="1.5.7" />
+    
+</meta>

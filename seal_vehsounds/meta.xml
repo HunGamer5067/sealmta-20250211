@@ -1,0 +1,141 @@
+<meta>
+    <file src="sounds/engines/BRABUS 900/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/BRABUS 900/low.wav" type="client" download="true" />
+    <file src="sounds/engines/BRABUS 900/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/BMWM5/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWM5/low.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWM5/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/BMWM6/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWM6/low.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWM6/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/BMWB48/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWB48/low.wav" type="client" download="true" />
+    <file src="sounds/engines/BMWB48/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/DEMON/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/DEMON/low.wav" type="client" download="true" />
+    <file src="sounds/engines/DEMON/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/SUBARU/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/SUBARU/low.wav" type="client" download="true" />
+    <file src="sounds/engines/SUBARU/high.wav" type="client" download="true" />
+    
+    <file src="sounds/engines/AUDI/idle.wav" type="client" download="true" />
+    <file src="sounds/engines/AUDI/low.wav" type="client" download="true" />
+    <file src="sounds/engines/AUDI/high.wav" type="client" download="true" />
+    
+    <file src="sounds/casual1/idle.wav" type="client" download="true" />
+    <file src="sounds/casual1/low.wav" type="client" download="true" />
+    <file src="sounds/casual1/high.wav" type="client" download="true" />
+    <file src="sounds/casual2/idle.wav" type="client" download="true" />
+    <file src="sounds/casual2/low.wav" type="client" download="true" />
+    <file src="sounds/casual2/high.wav" type="client" download="true" />
+    <file src="sounds/casual3/idle.wav" type="client" download="true" />
+    <file src="sounds/casual3/low.wav" type="client" download="true" />
+    <file src="sounds/casual3/high.wav" type="client" download="true" />
+    <file src="sounds/casual4/idle.wav" type="client" download="true" />
+    <file src="sounds/casual4/low.wav" type="client" download="true" />
+    <file src="sounds/casual4/high.wav" type="client" download="true" />
+    <file src="sounds/casual5/idle.wav" type="client" download="true" />
+    <file src="sounds/casual5/low.wav" type="client" download="true" />
+    <file src="sounds/casual5/high.wav" type="client" download="true" />
+    <file src="sounds/casual6/idle.wav" type="client" download="true" />
+    <file src="sounds/casual6/low.wav" type="client" download="true" />
+    <file src="sounds/casual6/high.wav" type="client" download="true" />
+    <file src="sounds/casual7/idle.wav" type="client" download="true" />
+    <file src="sounds/casual7/low.wav" type="client" download="true" />
+    <file src="sounds/casual7/high.wav" type="client" download="true" />
+    <file src="sounds/muscle1/idle.wav" type="client" download="true" />
+    <file src="sounds/muscle1/low.wav" type="client" download="true" />
+    <file src="sounds/muscle1/high.wav" type="client" download="true" />
+    <file src="sounds/muscle2/idle.wav" type="client" download="true" />
+    <file src="sounds/muscle2/low.wav" type="client" download="true" />
+    <file src="sounds/muscle2/high.wav" type="client" download="true" />
+    <file src="sounds/muscle3/idle.wav" type="client" download="true" />
+    <file src="sounds/muscle3/low.wav" type="client" download="true" />
+    <file src="sounds/muscle3/high.wav" type="client" download="true" />
+    <file src="sounds/muscle4/idle.wav" type="client" download="true" />
+    <file src="sounds/muscle4/low.wav" type="client" download="true" />
+    <file src="sounds/muscle4/high.wav" type="client" download="true" />
+    <file src="sounds/bus1/idle.wav" type="client" download="true" />
+    <file src="sounds/bus1/low.wav" type="client" download="true" />
+    <file src="sounds/bus1/high.wav" type="client" download="true" />
+    <file src="sounds/bus2/idle.wav" type="client" download="true" />
+    <file src="sounds/bus2/low.wav" type="client" download="true" />
+    <file src="sounds/bus2/high.wav" type="client" download="true" />
+    <file src="sounds/sport1/idle.wav" type="client" download="true" />
+    <file src="sounds/sport1/low.wav" type="client" download="true" />
+    <file src="sounds/sport1/high.wav" type="client" download="true" />
+    <file src="sounds/sport2/idle.wav" type="client" download="true" />
+    <file src="sounds/sport2/low.wav" type="client" download="true" />
+    <file src="sounds/sport2/high.wav" type="client" download="true" />
+    <file src="sounds/sport3/idle.wav" type="client" download="true" />
+    <file src="sounds/sport3/low.wav" type="client" download="true" />
+    <file src="sounds/sport3/high.wav" type="client" download="true" />
+    <file src="sounds/sport4/idle.wav" type="client" download="true" />
+    <file src="sounds/sport4/low.wav" type="client" download="true" />
+    <file src="sounds/sport4/high.wav" type="client" download="true" />
+    <file src="sounds/sport5/idle.wav" type="client" download="true" />
+    <file src="sounds/sport5/low.wav" type="client" download="true" />
+    <file src="sounds/sport5/high.wav" type="client" download="true" />
+    <file src="sounds/sport6/idle.wav" type="client" download="true" />
+    <file src="sounds/sport6/low.wav" type="client" download="true" />
+    <file src="sounds/sport6/high.wav" type="client" download="true" />
+    <file src="sounds/sport7/idle.wav" type="client" download="true" />
+    <file src="sounds/sport7/low.wav" type="client" download="true" />
+    <file src="sounds/sport7/high.wav" type="client" download="true" />
+    <file src="sounds/sport8/idle.wav" type="client" download="true" />
+    <file src="sounds/sport8/low.wav" type="client" download="true" />
+    <file src="sounds/sport8/high.wav" type="client" download="true" />
+    <file src="sounds/sport9/idle.wav" type="client" download="true" />
+    <file src="sounds/sport9/low.wav" type="client" download="true" />
+    <file src="sounds/sport9/high.wav" type="client" download="true" />
+    <file src="sounds/motorbike1/idle.wav" type="client" download="true" />
+    <file src="sounds/motorbike1/low.wav" type="client" download="true" />
+    <file src="sounds/motorbike1/high.wav" type="client" download="true" />
+    <file src="sounds/motorbike2/idle.wav" type="client" download="true" />
+    <file src="sounds/motorbike2/low.wav" type="client" download="true" />
+    <file src="sounds/motorbike2/high.wav" type="client" download="true" />
+    <file src="sounds/motorbike3/idle.wav" type="client" download="true" />
+    <file src="sounds/motorbike3/low.wav" type="client" download="true" />
+    <file src="sounds/motorbike3/high.wav" type="client" download="true" />
+    <file src="sounds/motorbike4/idle.wav" type="client" download="true" />
+    <file src="sounds/motorbike4/low.wav" type="client" download="true" />
+    <file src="sounds/motorbike4/high.wav" type="client" download="true" />
+    <file src="sounds/motorbike5/idle.wav" type="client" download="true" />
+    <file src="sounds/motorbike5/low.wav" type="client" download="true" />
+    <file src="sounds/motorbike5/high.wav" type="client" download="true" />
+    <file src="sounds/truck1/idle.wav" type="client" download="true" />
+    <file src="sounds/truck1/low.wav" type="client" download="true" />
+    <file src="sounds/truck1/high.wav" type="client" download="true" />
+    <file src="sounds/truck2/idle.wav" type="client" download="true" />
+    <file src="sounds/truck2/low.wav" type="client" download="true" />
+    <file src="sounds/truck2/high.wav" type="client" download="true" />
+    <file src="sounds/truck3/idle.wav" type="client" download="true" />
+    <file src="sounds/truck3/low.wav" type="client" download="true" />
+    <file src="sounds/truck3/high.wav" type="client" download="true" />
+    
+    <file src="sounds/gearshifts/bmw/gearup.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/bmw/geardn.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/default/gearup.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/default/geardn.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/porsche/gearup.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/truck/gearup.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/truck/geardn.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/motorcycle/gearup.wav" type="client" download="true" />
+    <file src="sounds/gearshifts/motorcycle/geardn.wav" type="client" download="true" />
+    
+    <file src="sounds/gearshifts/dsg/gearup.wav" type="client" download="true" />
+    
+    <script src="engine_c.luac" type="client" />
+    <script src="utils_s.luac" type="server" />
+    <script src="engine_s.luac" type="server" />
+    
+    <export function="getVehicleRPM" type="client" />
+    <export function="getVehicleGear" type="client" />
+    <export function="toggleEngines" type="client" />
+    <download_priority_group>-131</download_priority_group>
+</meta>

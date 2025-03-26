@@ -1,0 +1,27 @@
+<meta>
+    <download_priority_group>-23</download_priority_group>
+    
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <min_mta_version server="1.5.8" client="1.5.8" />
+    
+    <file src="files/Rubik.ttf" />
+    <file src="files/outoforder.png" />
+    <file src="files/atm_rob.png" />
+    <file src="files/atm_rob2.png" />
+    <file src="files/atm_rob3.png" />
+    <file src="files/rob.mp3" />
+    <file src="files/grinder.mp3" />
+    <file src="files/grinder_start.mp3" />
+    <file src="files/grinder_stop.mp3" />
+    <file src="files/arch.png" />
+    <file src="files/pointer.png" />
+    <script src="newBank/sourceG.luac" type="shared" cache="false" />
+    <script src="newBank/sourceS.luac" type="server" cache="false" />
+    <script src="newBank/sourceC.luac" type="client" cache="false" />
+    <file src="files/fonts/Rubik.ttf" />
+    <file src="files/card.png" />
+    <export function="setCardDataByItem" type="client" />
+    
+</meta>

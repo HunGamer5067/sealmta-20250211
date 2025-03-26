@@ -1,0 +1,5 @@
+addEvent("onClientPlayerDurr", true)
+addEventHandler("onClientPlayerDurr", getRootElement(), function()
+    local s = playSound("durr.mp3")
+    setSoundVolume(s, 2)
+end)

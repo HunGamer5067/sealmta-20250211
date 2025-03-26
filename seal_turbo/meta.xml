@@ -1,0 +1,37 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <file src="files/turbo1.wav" />
+    <file src="files/turbo2.wav" />
+    <file src="files/turbo3.wav" />
+    <file src="files/turbo4.wav" />
+    <file src="files/turbo5.wav" />
+    <file src="files/turbo6.wav" />
+    <file src="files/turbo7.wav" />
+    <file src="files/turbo8.wav" />
+    
+    <file src="files/boff1.wav" />
+    <file src="files/boff2.wav" />
+    <file src="files/boff3.wav" />
+    <file src="files/boff4.wav" />
+    <file src="files/boff5.wav" />
+    <file src="files/boff6.wav" />
+    <file src="files/boff7.wav" />
+    <file src="files/boff8.wav" />
+    <file src="files/boff9.wav" />
+    <file src="files/boff10.wav" />
+    <file src="files/boff11.wav" />
+    <file src="files/boff12.wav" />
+    <file src="files/boff13.wav" />
+    <file src="files/boff14.wav" />
+    <file src="files/boff15.wav" />
+    <file src="files/boff16.wav" />
+    <file src="files/boff17.wav" />
+    <file src="files/boff18.wav" />
+    
+    <export function="getVehicleTurboDatas" type="client" />
+    <export function="createTurboEditor" type="client" />
+    <export function="deleteTurboEditor" type="client" />
+    <download_priority_group>-125</download_priority_group>
+</meta>

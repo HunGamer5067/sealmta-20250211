@@ -1,0 +1,18 @@
+<meta>
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <file src="files/move_u.png" />
+    <file src="files/move_d.png" />
+    <file src="files/move_l.png" />
+    <file src="files/move_r.png" />
+    
+    <file src="files/rotate_l.png" />
+    <file src="files/rotate_r.png" />
+    
+    <file src="files/save.png" />
+    
+    <min_mta_version server="1.6.0-9.21765" />
+    <download_priority_group>-61</download_priority_group>
+</meta>

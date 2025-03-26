@@ -1,0 +1,405 @@
+local casinoZones = {}
+local rouletteTableDatas = {}
+local playersAtTables = {}
+
+local objects = {
+    {7982, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {3433, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {8528, 2000 + 1580.5618896484, -1597.29481, 573.84674072266},
+    {8515, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {7982, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {8514, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {7982, 2000 + 1580.5618896484, -1597.2827148438, 573.84674072266},
+    {8502, 2000 + 1556.05, -1572.3065185547, 570.8}
+}
+
+addEventHandler("onResourceStart", resourceRoot,
+    function ()
+        for k, v in pairs(syncZoneCoords) do
+            k = v[6]
+            casinoZones[k] = {}
+
+            casinoZones[k].col = createColRectangle(v[1], v[2], v[3], v[4])
+            setElementInterior(casinoZones[k].col, v[5])
+            setElementDimension(casinoZones[k].col, v[6])
+            setElementData(casinoZones[k].col, "casinoDimension", v[6])
+            
+            casinoZones[k].name = v[7]
+            casinoZones[k].players = {}
+        end
+
+        for k, v in pairs(rouletteTableCoords) do
+            rouletteTableDatas[k] = {
+                data = {
+                    players = {}
+                },
+                spin = false,
+                slow = false,
+                bounce = false,
+                n = false,
+                cd = false,
+                history = {},
+                bets = {}
+            }
+        end
+
+        for _, objData in ipairs(objects) do
+            local model, x, y, z = unpack(objData)
+            local obj = createObject(model, x, y, z)
+            setElementInterior(obj, 2)
+            setElementDimension(obj, 2)
+        end
+    end
+)
+
+addEventHandler("onColShapeHit", root,
+    function (hitElement, matchingDimension)
+        if getElementType(hitElement) == "player" then
+            if matchingDimension then
+                local casinoDimension = getElementData(source, "casinoDimension")
+
+                if casinoDimension then
+                    local rouletteTables = getTablesInCasino(casinoDimension)
+                    local casinoZone = casinoZones[casinoDimension]
+
+                    table.insert(casinoZone.players, hitElement)
+
+                    for k, v in pairs(rouletteTables) do
+                        triggerClientEvent(hitElement, "streamInRoulette", hitElement, k, v.data, v.spin, v.slow, v.bounce, v.n, v.cd, v.history)
+                    end
+                end
+            end
+        end
+    end
+)
+
+addEventHandler("onElementDimensionChange", root,
+	function (oldDimension, newDimension)
+        if newDimension == 3 then
+            local rouletteTables = getTablesInCasino(newDimension)
+            local casinoZone = casinoZones[newDimension]
+
+            table.insert(casinoZone.players, source)
+
+            for k, v in pairs(rouletteTables) do
+                triggerClientEvent(source, "streamInRoulette", source, k, v.data, v.spin, v.slow, v.bounce, v.n, v.cd, v.history)
+            end
+        elseif newDimension == 13 then
+            local rouletteTables = getTablesInCasino(newDimension)
+            local casinoZone = casinoZones[newDimension]
+
+            table.insert(casinoZone.players, source)
+
+            for k, v in pairs(rouletteTables) do
+                triggerClientEvent(source, "streamInRoulette", source, k, v.data, v.spin, v.slow, v.bounce, v.n, v.cd, v.history)
+            end
+        end
+    end
+)
+
+addEventHandler("onColShapeLeave", root,
+    function (hitElement, matchingDimension)
+        if getElementType(hitElement) == "player" then
+            if matchingDimension then
+                local casinoDimension = getElementData(source, "casinoDimension")
+                local casinoZone = casinoZones[casinoDimension]
+
+                if casinoDimension then
+                    triggerClientEvent(hitElement, "streamOutRoulettes", hitElement)
+                
+                    for k, v in pairs(casinoZone.players) do
+                        if v == hitElement then
+                            table.remove(casinoZone.players, k)
+                        end
+                    end
+                end
+            end
+        end
+    end
+)
+
+addEvent("requestRouletteMachine", true)
+addEventHandler("requestRouletteMachine", root,
+    function ()
+        for k, v in pairs(casinoZones) do
+            if isElementWithinColShape(client, v.col) then
+                local rouletteTables = getTablesInCasino(getElementDimension(v.col))
+
+                for k, v in pairs(rouletteTables) do
+                    triggerClientEvent(client, "streamInRoulette", client, k, v.data, v.spin, v.slow, v.bounce, v.n, v.cd, v.history)
+                end
+
+                table.insert(v.players, client)
+            end
+        end
+    end
+)
+
+addEvent("tryToSitDownRoulette", true)
+addEventHandler("tryToSitDownRoulette", root,
+    function (tableId, seatId)
+        local tableData = rouletteTableDatas[tableId]
+
+        if tableData then
+            local casinoZone = casinoZones[getElementDimension(client)]
+
+            tableData.data.players[seatId] = client
+            tableData.bets[seatId] = {}
+
+            playersAtTables[client] = {
+                tableId = tableId,
+                seatId = seatId
+            }
+
+            triggerClientEvent(client, "refreshSSC", client, getElementData(client, "char.slotCoins"))
+
+            for k, v in pairs(tableData.data.players) do
+                triggerClientEvent(casinoZone.players, "gotRoulettePlayer", v, tableId, seatId, client)
+            end
+        end
+    end
+)
+
+addEvent("tryToExitRoulette", true)
+addEventHandler("tryToExitRoulette", root,
+    function ()
+        local playerData = playersAtTables[client]
+
+        if playerData then
+            local tableData = rouletteTableDatas[playerData.tableId]
+
+            if tableData then
+                local casinoZone = casinoZones[getElementDimension(client)]
+                
+                triggerClientEvent(casinoZone.players, "gotRoulettePlayer", client, playerData.tableId, playerData.seatId, false)
+                
+                tableData.data.players[playerData.seatId] = nil
+                playersAtTables[client] = nil
+            end
+        end
+    end
+)
+
+addEvent("tryToAddRouletteBet", true)
+addEventHandler("tryToAddRouletteBet", root,
+    function (betType, amount)
+        local playerData = playersAtTables[client]
+
+        if playerData then
+            local tableData = rouletteTableDatas[playerData.tableId]
+
+            if tableData then
+                local casinoZone = casinoZones[getElementDimension(client)]
+
+                if betType == "tier" or betType == "orphelins" or betType == "voisins" or betType == "zero" then
+                    for i = 1, _G[betType .. "Amount"] do
+                        local betName = _G[betType .. "Bets"][i]
+
+                        if amount < 0 then
+                            if not tableData.bets[playerData.seatId][betName] then
+                                return
+                            elseif tableData.bets[playerData.seatId][betName] < amount then
+                                return
+                            end
+                        end
+
+                        if betName then
+                            if tableData.bets[playerData.seatId][betName] then                    
+                                tableData.bets[playerData.seatId][betName] = tableData.bets[playerData.seatId][betName] + amount
+                            else
+                                tableData.bets[playerData.seatId][betName] = amount
+                            end
+                            
+                            if tableData.bets[playerData.seatId][betName] <= 0 then
+                                tableData.bets[playerData.seatId][betName] = nil
+                            end
+    
+                            setElementData(client, "char.slotCoins", getElementData(client, "char.slotCoins") - amount)
+
+                            triggerClientEvent(casinoZone.players, "gotNewRouletteBet", client, playerData.tableId, playerData.seatId, betName, tableData.bets[playerData.seatId][betName], i ~= 1 and true)
+                        end
+
+                    end
+                elseif string.sub(betType, 1, 1) == "n" then
+                    local n = validBets[betType][2]
+
+                    for i = 1, 3 do
+                        local betName = i == 1 and neighbours[n][1] or i == 2 and n or neighbours[n][3]
+
+                        if amount < 0 then
+                            if not tableData.bets[playerData.seatId][betName] then
+                                return
+                            end
+                        end
+    
+                        if tableData.bets[playerData.seatId][betName] then                    
+                            tableData.bets[playerData.seatId][betName] = tableData.bets[playerData.seatId][betName] + amount
+                        else 
+                            tableData.bets[playerData.seatId][betName] = amount
+                        end
+    
+                        if tableData.bets[playerData.seatId][betName] <= 0 then
+                            tableData.bets[playerData.seatId][betName] = nil
+                        end
+
+                        setElementData(client, "char.slotCoins", getElementData(client, "char.slotCoins") - amount)
+    
+                        triggerClientEvent(casinoZone.players, "gotNewRouletteBet", client, playerData.tableId, playerData.seatId, betName, tableData.bets[playerData.seatId][betName], false)    
+                    end
+                else
+                    if amount < 0 then
+                        if not tableData.bets[playerData.seatId][betType] then
+                            return
+                        end
+                    end
+
+                    if tableData.bets[playerData.seatId][betType] then                    
+                        tableData.bets[playerData.seatId][betType] = tableData.bets[playerData.seatId][betType] + amount
+                    else 
+                        tableData.bets[playerData.seatId][betType] = amount
+                    end
+
+                    if tableData.bets[playerData.seatId][betType] <= 0 then
+                        tableData.bets[playerData.seatId][betType] = nil
+                    end
+
+                    setElementData(client, "char.slotCoins", getElementData(client, "char.slotCoins") - amount)
+
+                    triggerClientEvent(casinoZone.players, "gotNewRouletteBet", client, playerData.tableId, playerData.seatId, betType, tableData.bets[playerData.seatId][betType], false)
+                end
+
+                triggerClientEvent(client, "refreshSSC", client, getElementData(client, "char.slotCoins"))
+
+                if not tableData.cd then
+                    tableData.cd = 60000
+                    tableData.cdTimer = setTimer(spinUpBall, 60000, 1, playerData.tableId)
+                end
+            end
+        end
+    end
+)
+
+function spinUpBall(tableId)
+    local tableData = rouletteTableDatas[tableId]
+
+    if tableData then
+        local slowDown = math.random(5000, 10000)
+
+        setTimer(slowDownBall, slowDown, 1, tableId)
+
+        triggerClientEvent("rouletteSpinUpBall", root, tableId)
+    end
+end
+
+function slowDownBall(tableId)
+    local tableData = rouletteTableDatas[tableId]
+
+    if tableData then
+        local bounce = math.random(5000, 10000)
+
+        setTimer(bounceBall, bounce, 1, tableId)
+
+        triggerClientEvent("rouletteSlowDownBall", root, tableId)
+    end
+end
+
+function bounceBall(tableId)
+    local tableData = rouletteTableDatas[tableId]
+
+    if tableData then
+        math.randomseed(getTickCount())
+        
+        local winNum = math.random(0, 36)
+        local bounces = math.random(1, 4)
+        local winNumEx = rouletteWheelNums[winNum + 1]
+
+        local winnerBetsEx = {}
+
+        for i = 1, #winnerBets[winNumEx] do
+            winnerBetsEx[winnerBets[winNumEx][i]] = true
+        end
+
+        local bets = {}
+        local wins = {}
+        local winAmounts = {}
+        local tablePlayers = tableData.data.players
+
+        for k, v in pairs(tableData.bets) do
+            bets[k] = 0
+            winAmounts[k] = 0
+
+            for bet, value in pairs(v) do
+                bets[k] = bets[k] + 1
+
+                if winnerBetsEx[bet] then
+                    if not wins[k] then
+                        wins[k] = 0
+                    end
+
+                    wins[k] = wins[k] + 1
+                    winAmounts[k] = winAmounts[k] + value * (1 + payoutsForBets[bet])
+                end
+            end
+        end
+
+        setTimer(newRound, 20000, 1, tableId, winNum, winAmounts, tablePlayers)
+
+        triggerClientEvent("rouletteBounceTheBall", resourceRoot, tableId, winNum, bounces, wins, bets)
+    end
+end
+
+function newRound(tableId, winNum, winAmounts, tablePlayers)
+    local tableData = rouletteTableDatas[tableId]
+
+    if tableData then
+        tableData.spin = false
+        tableData.slow = false
+        tableData.bounce = false
+        tableData.n = false
+        tableData.cd = false
+    
+        for k, v in pairs(tableData.bets) do
+            tableData.bets[k] = {}
+        end
+        
+        table.insert(tableData.history, winNum)
+
+        for k, v in pairs(winAmounts) do
+            local playerElement = tablePlayers[k]
+        
+            if isElement(playerElement) then
+                local playerSSC = tonumber(getElementData(playerElement, "char.slotCoins")) or 0
+                local newSSC = playerSSC + v
+    
+                setElementData(playerElement, "char.slotCoins", newSSC)
+                triggerClientEvent(playerElement, "refreshSSC", playerElement, newSSC)
+            else
+                outputDebugString("Hiba: playerElement nem érvényes! Kulcs: " .. tostring(k))
+            end
+        end
+
+        for k, v in pairs(tableData.data.players) do
+            triggerClientEvent("rouletteNewRound", v, tableId)
+        end
+    end
+end
+
+function getTablesInCasino(dimension)
+    local tables = {}
+
+    for k, v in pairs(rouletteTableCoords) do
+        if v[6] == dimension then
+            tables[k] = {
+                data = rouletteTableDatas[k].data,
+                spin = rouletteTableDatas[k].spin,
+                slow = rouletteTableDatas[k].slow,
+                bounce = rouletteTableDatas[k].bounce,
+                n = rouletteTableDatas[k].n,
+                cd = rouletteTableDatas[k].cd,
+                history = rouletteTableDatas[k].history
+            }
+        end
+    end
+
+    return tables
+end

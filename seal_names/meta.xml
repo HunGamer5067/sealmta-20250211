@@ -1,0 +1,36 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" />
+    
+    <export function="getPlayerAfkStart" type="client" />
+    <export function="setNamesState" type="client" />
+    <export function="getNamesState" type="client" />
+    <export function="getNameSize" type="client" />
+    <export function="setNameSize" type="client" />
+    <export function="setNameAlpha" type="client" />
+    <export function="getNameAlpha" type="client" />
+    <export function="setNameFont" type="client" />
+    <export function="getNameFont" type="client" />
+    <export function="getSquadsVisible" type="client" />
+    <export function="setSquadsVisible" type="client" />
+    <export function="setVoiceState" type="client" />
+    <export function="setVehicleSquad" type="client" />
+    
+    <export function="getNameSize" type="client" />
+    <export function="setNameSize" type="client" />
+    <export function="getNameAlpha" type="client" />
+    <export function="setNameAlpha" type="client" />
+    <export function="getNameFont" type="client" />
+    <export function="setNameFont" type="client" />
+    <export function="setNamesState" type="client" />
+    <export function="setOwnNameState" type="client" />
+    <export function="getOwnNameState" type="client" />
+    
+    <export function="updateItemShowList" type="client" />
+    
+    <file src="files/*.dds" />
+    <file src="files/*.see" />
+    
+    <min_mta_version client="1.6" server="1.6" />
+    <download_priority_group>-88</download_priority_group>
+</meta>

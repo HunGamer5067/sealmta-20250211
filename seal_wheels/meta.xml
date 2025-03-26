@@ -1,0 +1,23 @@
+<meta>
+    <script src="sourceG.luac" type="shared" cache="false" />
+    <script src="sourceC.luac" type="client" cache="false" />
+    
+    
+    <file src="wheels/wheel.txd" />
+    <file src="wheels/wheels1.txd" />
+    <file src="wheels/wheels2.txd" />
+    <file src="wheels/wheels3.txd" />
+    <file src="wheels/wheels4.txd" />
+    <file src="wheels/fm3_wheels.txd" />
+    <file src="wheels/1.dff" />
+    <file src="wheels/2.dff" />
+    <file src="wheels/3.dff" />
+    <file src="wheels/4.dff" />
+    <file src="wheels/5.dff" />
+    <file src="wheels/6.dff" />
+    <file src="wheels/7.dff" />
+    <file src="wheels/8.dff" />
+    
+    
+    <download_priority_group>-138</download_priority_group>
+</meta>

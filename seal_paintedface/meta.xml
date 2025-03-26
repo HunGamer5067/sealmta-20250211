@@ -1,0 +1,12 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    
+    <file src="files/g1.png" />
+    <file src="files/g2.png" />
+    <file src="files/g3.png" />
+    <file src="files/g4.png" />
+    <file src="files/texturechanger.fx" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+    <download_priority_group>-94</download_priority_group>
+</meta>

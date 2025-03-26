@@ -1,0 +1,10 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <file src="encrypted/*.dff.seal" />
+    <file src="files/*.col" />
+    <file src="files/*.txd" />
+    
+    <download_priority_group>-53</download_priority_group>
+</meta>

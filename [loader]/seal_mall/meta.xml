@@ -1,0 +1,116 @@
+<meta>
+    <script src="sourceC_v4.lua" type="client" cache="false" />
+    <script src="sourceG_v4.lua" type="shared" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    
+    <export function="countModels" type="client" />
+    <export function="loadAModel" type="client" />
+    <export function="isModloaderLoaded" type="client" />
+    
+    <export function="getModelId" type="shared" />
+    
+    <file src="files/clothing/bag/*.txd" />
+    <file src="files/clothing/bag/*.dff" />
+    
+    <file src="files/clothing/bandana/*.txd" />
+    <file src="files/clothing/bandana/*.dff" />
+    
+    <file src="files/clothing/faction/*.txd" />
+    <file src="files/clothing/faction/*.dff" />
+    
+    <file src="files/clothing/glasses/*.txd" />
+    <file src="files/clothing/glasses/*.dff" />
+    
+    <file src="files/clothing/hair/*.txd" />
+    <file src="files/clothing/hair/*.dff" />
+    
+    <file src="files/clothing/headwear/*.txd" />
+    <file src="files/clothing/headwear/*.dff" />
+    
+    <file src="files/clothing/jewellery/*.txd" />
+    <file src="files/clothing/jewellery/*.dff" />
+    
+    <file src="files/clothing/other/*.txd" />
+    <file src="files/clothing/other/*.dff" />
+    
+    <file src="files/clothing/vest/*.txd" />
+    <file src="files/clothing/vest/*.dff" />
+    
+    <file src="files/collisions/mallb_laW.col" />
+    <file src="files/collisions/mallb_laW_storeLogos.col" />
+    <file src="files/collisions/mallglass_laW.col" />
+    <file src="files/collisions/mall_bollards1.col" />
+    <file src="files/collisions/mall_door.col" />
+    <file src="files/collisions/mall_laW.col" />
+    <file src="files/collisions/mall_neon1.col" />
+    <file src="files/collisions/mall_neon2.col" />
+    <file src="files/collisions/mall_parking.col" />
+    <file src="files/collisions/mall_parking_alpha.col" />
+    <file src="files/collisions/mall_parking_props.col" />
+    <file src="files/collisions/mall_rooms_247.col" />
+    <file src="files/collisions/mall_rooms_bank.col" />
+    <file src="files/collisions/mall_rooms_burger.col" />
+    <file src="files/collisions/mall_rooms_burger_alpha.col" />
+    <file src="files/collisions/mall_rooms_burger_props.col" />
+    <file src="files/collisions/mall_rooms_cluckinBell.col" />
+    <file src="files/collisions/mall_rooms_cluckinBell_alpha.col" />
+    <file src="files/collisions/mall_rooms_cluckinBell_props.col" />
+    <file src="files/collisions/mall_rooms_coffee.col" />
+    <file src="files/collisions/mall_rooms_coffee_alpha.col" />
+    <file src="files/collisions/mall_rooms_digital.col" />
+    <file src="files/collisions/mall_rooms_flintTools.col" />
+    <file src="files/collisions/mall_rooms_jewelry.col" />
+    <file src="files/collisions/mall_rooms_lottery.col" />
+    <file src="files/collisions/mall_rooms_pharmacy.col" />
+    <file src="files/collisions/mall_rooms_toilet.col" />
+    <file src="files/collisions/mall_rooms_zip.col" />
+    <file src="files/collisions/road_lawn04.col" />
+    <file src="files/collisions/barrier_gate1.col" />
+    <file src="files/collisions/barrier_gate2.col" />
+    <file src="files/collisions/barrier_gate3.col" />
+    <file src="files/models/LODmallb_laW.dff" />
+    <file src="files/models/LODmall_law.dff" />
+    <file src="files/models/mallb_laW.dff" />
+    <file src="files/models/mallb_laW_storeLogos.dff" />
+    <file src="files/models/mallb_laW_storeLogosLOD.dff" />
+    <file src="files/models/mallglass_laW.dff" />
+    <file src="files/models/mall_bollards1.dff" />
+    <file src="files/models/mall_clockwiseH.dff" />
+    <file src="files/models/mall_clockwiseM.dff" />
+    <file src="files/models/mall_door.dff" />
+    <file src="files/models/mall_laW.dff" />
+    <file src="files/models/mall_neon1.dff" />
+    <file src="files/models/mall_neon2.dff" />
+    <file src="files/models/mall_parking.dff" />
+    <file src="files/models/mall_parking_alpha.dff" />
+    <file src="files/models/mall_parking_props.dff" />
+    <file src="files/models/mall_rooms_247.dff" />
+    <file src="files/models/mall_rooms_247prods.dff" />
+    <file src="files/models/mall_rooms_bank.dff" />
+    <file src="files/models/mall_rooms_burger.dff" />
+    <file src="files/models/mall_rooms_burger_alpha.dff" />
+    <file src="files/models/mall_rooms_burger_props.dff" />
+    <file src="files/models/mall_rooms_cluckinBell.dff" />
+    <file src="files/models/mall_rooms_cluckinBell_alpha.dff" />
+    <file src="files/models/mall_rooms_cluckinBell_props.dff" />
+    <file src="files/models/mall_rooms_coffee.dff" />
+    <file src="files/models/mall_rooms_coffee_alpha.dff" />
+    <file src="files/models/mall_rooms_digital.dff" />
+    <file src="files/models/mall_rooms_flintTools.dff" />
+    <file src="files/models/mall_rooms_jewelry.dff" />
+    <file src="files/models/mall_rooms_lottery.dff" />
+    <file src="files/models/mall_rooms_pharmacy.dff" />
+    <file src="files/models/mall_rooms_toilet.dff" />
+    <file src="files/models/mall_rooms_zip.dff" />
+    <file src="files/models/mall_toiletdoor_female.dff" />
+    <file src="files/models/mall_toiletdoor_male.dff" />
+    <file src="files/models/road_lawn04.dff" />
+    <file src="files/models/barrier_gate1.dff" />
+    <file src="files/models/barrier_gate2.dff" />
+    <file src="files/models/barrier_gate3.dff" />
+    <file src="files/textures/barrier_gate.txd" />
+    <file src="files/textures/mall.txd" />
+    <file src="files/textures/mall_lod.txd" />
+    <file src="files/alpha_textures.txd" />
+    <download_priority_group>-5</download_priority_group>
+</meta>

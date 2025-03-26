@@ -1,0 +1,27 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    
+    <file src="models/blackwestran1_lae2.txd" />
+    <file src="models/burnhous1_lae2.dff" />
+    <file src="models/burnsground.txd" />
+    <file src="models/comedprj1_la.txd" />
+    <file src="models/eastls3_lae2.txd" />
+    <file src="models/gangblok1_lae2.txd" />
+    <file src="models/lae2_ground08.dff" />
+    <file src="models/lae2_roads22.dff" />
+    <file src="models/lae2_roads23.dff" />
+    <file src="models/lae2_roads24.dff" />
+    <file src="models/lae2_roads25.dff" />
+    <file src="models/lae2_roads26.dff" />
+    <file src="models/lae2_roads27.dff" />
+    <file src="models/lae2_roads28.dff" />
+    <file src="models/lae2_roads33.dff" />
+    <file src="models/lae2_roads34.dff" />
+    <file src="models/lae2_roads37.dff" />
+    <file src="models/lae2_roads90.dff" />
+    <file src="models/lae2roads.txd" />
+    <file src="models/pigpenblok1_lae2.dff" />
+    <file src="models/project2lae2.dff" />
+    <min_mta_version server="1.3.4-0.00000" client="1.5.6-9.18728"></min_mta_version>
+    <download_priority_group>-55</download_priority_group>
+</meta>

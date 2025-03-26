@@ -1,0 +1,47 @@
+local turboSound = false
+local turboSpeed = 1
+local turboProgress = 0
+local turboSoundVolume = 1
+local turboDown = false
+
+addEventHandler("onClientResourceStart", resourceRoot, function()
+    turboSound = playSound("files/turbo5.wav", true)
+end)
+
+addEventHandler("onClientRender", getRootElement(), function()
+    turboSpeed = math.min(math.max(0.2, turboProgress * 1.7), 4) + 0.2
+    setSoundSpeed(turboSound, turboSpeed)
+    dxDrawText("sSpeed: " .. turboSpeed .. "\nsProgress: " .. turboProgress, 500, 500, _, _, _, 5)
+
+    local pitch = math.min(math.max(0.3, turboSpeed * 1.15), 4) + 0.25
+    local vol = getEasingValue(math.max(math.min(turboSpeed * 2 - 0.5, 1), 0), "OutQuad") * 0.8 + math.max(0, 0.25 * (pitch - 1) / 3)
+    setSoundVolume(turboSound, vol * 0.135 * 1.2 * turboSoundVolume)
+    setSoundSpeed(turboSound, pitch * 0.35)
+end)
+
+addEventHandler("onClientKey", getRootElement(), function(key, state)
+    if key == "mouse_wheel_down" or key == "mouse_wheel_up" and state then
+        turboProgress = turboProgress + ((key == "mouse_wheel_up" and 0.01) or -0.01)
+        turboProgress = math.max(math.min(turboProgress, 2.5), 0)
+    end
+end)
+
+addEventHandler("onClientPreRender", getRootElement(), function(delta)
+    if turboDown then
+        turboProgress = turboProgress - 1 * delta / 100
+        if turboProgress <= 0 then
+            turboProgress = 0
+            turboDown = false
+        end
+    else
+        turboProgress = turboProgress + 1 * delta / 1000
+        if turboProgress > 2.5 then
+            playSound("files/boff" .. math.random(1, 18) .. ".wav")
+            if isElement(turboSound) then
+                destroyElement(turboSound)
+            end
+            turboSound = playSound("files/turbo" .. math.random(1, 8) .. ".wav", true)
+            turboDown = true
+        end
+    end
+end)

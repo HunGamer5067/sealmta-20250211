@@ -1,0 +1,11 @@
+<meta>
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <export function="giveSlotCoin" type="server" />
+    <export function="takeSlotCoin" type="server" />
+    
+    <export function="giveMoney" type="server" />
+    <export function="takeMoney" type="server" />
+    <download_priority_group>-33</download_priority_group>
+</meta>

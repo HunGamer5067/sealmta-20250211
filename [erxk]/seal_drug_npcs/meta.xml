@@ -1,0 +1,6 @@
+<meta>
+    <script src="sourceC.luac" type="client" />
+    <script src="sourceG.luac" type="shared" />
+    <script src="sourceS.luac" type="server" />
+    <download_priority_group>-49</download_priority_group>
+</meta>

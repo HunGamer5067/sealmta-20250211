@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <removeWorldObject id="removeWorldObject (spraydoor_LAw2) (1)" radius="5.2424793" interior="-1" model="6400" lodModel="0" posX="488.28125" posY="-1734.6953" posZ="12.39063" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (laespraydoor1) (1)" radius="4.9156308" interior="-1" model="5422" lodModel="0" posX="2071.4766" posY="-1831.4219" posZ="14.5625" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+    <removeWorldObject id="removeWorldObject (lawnspraydoor1) (1)" radius="4.9156475" interior="-1" model="5856" lodModel="0" posX="1024.9844" posY="-1029.3516" posZ="33.19531" rotX="0" rotY="0" rotZ="0"></removeWorldObject>
+</map>

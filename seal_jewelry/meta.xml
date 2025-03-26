@@ -1,0 +1,17 @@
+<meta>
+    
+    <!-- Scripts -->
+    <script type="shared" cache="false" src="sourceG.luac" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" cache="false" src="sourceC.luac" />
+    
+    <script type="client" cache="false" src="minigame/sourceC.luac" />
+    
+    <!-- Images -->
+    <file src="files/images/*.dds" />
+    
+    <!-- Sounds -->
+    <file src="files/sounds/*.mp3" />
+    
+    <download_priority_group>-159</download_priority_group>
+</meta>

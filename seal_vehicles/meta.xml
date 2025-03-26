@@ -1,0 +1,45 @@
+<meta>
+    <download_priority_group>-130</download_priority_group>
+    
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    <script type="client" src="adC.luac" cache="false" />
+    
+    <script type="client" src="realisticC.luac" cache="false" />
+    
+    <file src="files/crash1.mp3" />
+    <file src="files/crash2.mp3" />
+    <file src="files/crash3.mp3" />
+    <file src="files/crash4.mp3" />
+    <file src="files/crash5.mp3" />
+    <file src="files/crash6.mp3" />
+    <file src="files/crash7.mp3" />
+    <file src="files/crash8.mp3" />
+    <file src="files/crash9.mp3" />
+    
+    <file src="files/crash1.dds" />
+    <file src="files/crash2.dds" />
+    <file src="files/crash3.dds" />
+    <file src="files/crash4.dds" />
+    
+    <file src="files/cardebris1.dds" />
+    <file src="files/cardebris2.dds" />
+    <file src="files/cardebris3.dds" />
+    <file src="files/cardebris4.dds" />
+    <file src="files/cardebris5.dds" />
+    
+    <file src="files/shard1.dds" />
+    <file src="files/shard2.dds" />
+    <file src="files/shard3.dds" />
+    <file src="files/shard4.dds" />
+    <file src="files/shard5.dds" />
+    
+    <export type="shared" function="encodeDatabaseId" />
+    <export type="server" function="createPermVehicle" />
+    <export type="server" function="loadVehicle" />
+    <export type="server" function="saveVehicle" />
+    <export type="server" function="resetVehicle" />
+    
+    <min_mta_version client="1.5.7" server="1.5.7" />
+</meta>

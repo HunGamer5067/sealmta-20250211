@@ -1,0 +1,51 @@
+<meta>
+    <download_priority_group>-4</download_priority_group>
+    
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <script type="client" src="utilsC.luac" cache="false" />
+    
+    <export type="shared" function="findPlayer" />
+    <export type="shared" function="getLevel" />
+    
+    <export type="server" function="showMessageToPlayer" />
+    <export type="client" function="showMessageToPlayer" />
+    <export type="shared" function="getServerSyntax" />
+    
+    <export type="server" function="getMoney" />
+    <export type="server" function="takeMoneyEx" />
+    <export type="server" function="takeMoney" />
+    <export type="server" function="giveMoney" />
+    <export type="server" function="setMoney" />
+    <export type="client" function="getServerLogo" />
+    
+    <export type="client" function="isInSlot" />
+    <export type="client" function="drawText" />
+    
+    <file src="files/logo.png" />
+    
+    <file src="files/wall_mrt.fx" />
+    <file src="files/wall.fx" />
+    <file src="files/edge.fx" />
+    <file src="files/Rubik.ttf" />
+    <file src="files/hover.wav" />
+    
+    <file src="fonts/counter.ttf" />
+    <file src="fonts/counter2.ttf" />
+    <file src="fonts/hand.otf" />
+    <file src="fonts/Rubik.ttf" />
+    <file src="fonts/ThermalPrinter.ttf" />
+    <file src="fonts/lunabar.ttf" />
+    <file src="fonts/BebasNeueRegular.otf" />
+    <export type="client" function="getInterfaceElements" />
+    
+    <export type="client" function="createElementOutlineEffect" />
+    <export type="client" function="destroyElementOutlineEffect" />
+    
+    <export type="client" function="loadFont" />
+    <export type="client" function="getFontsDetail" />
+    
+    <min_mta_version client="1.5.8" server="1.5.8" />
+</meta>

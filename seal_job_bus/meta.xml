@@ -1,0 +1,9 @@
+<meta>
+    <download_priority_group>-72</download_priority_group>
+    
+    <script type="shared" src="sourceG.luac" cache="false" />
+    <script type="server" src="sourceS.luac" />
+    <script type="client" src="sourceC.luac" cache="false" />
+    
+    <min_mta_version server="1.6.0-9.21765" />
+</meta>

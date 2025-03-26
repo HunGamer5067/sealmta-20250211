@@ -1,0 +1,20 @@
+<meta>
+    <script src="sourceG.luac" type="shared" cache="false" />
+    <script src="circleC.luac" type="client" cache="false" />
+    <script src="sourceC.luac" type="client" cache="false" />
+    <script src="sourceS.luac" type="server" />
+    
+    <export function="getAnimCircleBind" type="client" />
+    <export function="setAnimCircleBind" type="client" />
+    <export function="getAnimPanelBind" type="client" />
+    <export function="setAnimPanelBind" type="client" />
+    
+    <file src="custom/*.ifp" />
+    <file src="files/circle.dds" />
+    <file src="files/glow.dds" />
+    <file src="files/hover.wav" />
+    <file src="files/outline.dds" />
+    <file src="files/whosh1.wav" />
+    <file src="files/whosh2.wav" />
+    <download_priority_group>-20</download_priority_group>
+</meta>
